@@ -6,7 +6,7 @@ function scrollEvent() {
   const currentScrollPos = window.pageYOffset;
   const maxHeight = document.documentElement.scrollHeight;
   if (currentScrollPos > prevScrollPos) {
-      if (window.scrollY + window.innerHeight >= maxHeight) {
+      if (window.scrollY + window.innerHeight >= (maxHeight-20)) {
         navBottom.classList.remove("hidden");
   }else{
         navBottom.classList.add("hidden");
