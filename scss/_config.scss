@@ -1,0 +1,102 @@
+$font-family-english: 'Inter';
+$font-family-nepali: 'Mukta';
+$primary-color: #FFFF;
+$secondary-color: #204A8E;
+$tertary-color: #888888;
+$third-color: #D9D9D9;
+$text-color: black;
+$divider-color: #DDDDDD;
+$bold: 900;
+$normal: 400;
+$medium: 600;
+$font-size: 14px;
+
+@mixin button-hollow {
+    font-size: 14px;
+    background-color: rgba(50, 108, 172, 10%);
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+    cursor: pointer;
+}
+
+@mixin flex-space-between($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+}
+
+@mixin flex-direction($direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+
+}
+
+@mixin header {
+    font-family: $font-family-nepali;
+    font-size: 24px;
+    color: $secondary-color;
+    font-weight: $bold;
+}
+
+@mixin news-header {
+    font-family: $font-family-nepali;
+    font-size: 22px;
+    font-weight: $medium;
+}
+
+@mixin news-paragraph {
+    font-family: $font-family-nepali;
+    font-size: 16px;
+    font-weight: $normal;
+}
+
+@mixin secondary-header {
+    font-family: $font-family-nepali;
+    font-size: 19px;
+    font-weight: $medium;
+}
+
+@mixin secondary-paragaraph {
+    font-family: $font-family-nepali;
+    font-size: 14px;
+    font-weight: $normal;
+}
+
+@mixin hero-content {
+    padding-bottom: 16px;
+    border-bottom: 1px solid $divider-color;
+    margin-bottom: 16px;
+
+    &-image {
+        height: 203px;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-content {
+        @include flex-direction(column, 8px);
+
+        &-time {
+            @include flex-direction(row, 12px);
+        }
+
+        &-header {
+            @include news-header;
+        }
+
+        &-p {
+            @include news-paragraph;
+        }
+
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
