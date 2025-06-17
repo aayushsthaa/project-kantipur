@@ -1,19 +1,25 @@
 $font-family-english: 'Inter';
 $font-family-nepali: 'Mukta';
-$primary-color: #FFFF;
+$background-light: #FFFF;
 $secondary-color: #204A8E;
 $tertary-color: #888888;
 $third-color: #D9D9D9;
-$text-color: black;
+$secondary-backgorund: #F5F8FB;
+$text-light: black;
+$background-dark: #181818;
+$text-dark: #ffffff;
+$toggle-light: #888888;
+$toggle-dark: #204A8E;
 $divider-color: #DDDDDD;
 $bold: 900;
 $normal: 400;
 $medium: 600;
 $font-size: 14px;
 
+
 @mixin button-hollow {
     font-size: 14px;
-    background-color: rgba(50, 108, 172, 10%);
+    background-color: rgba(50, 108, 172, 0.1);
     color: $secondary-color;
     border: 1px solid $secondary-color;
     cursor: pointer;
@@ -53,7 +59,7 @@ $font-size: 14px;
 
 @mixin secondary-header {
     font-family: $font-family-nepali;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: $medium;
 }
 
@@ -69,12 +75,12 @@ $font-size: 14px;
     margin-bottom: 16px;
 
     &-image {
-        height: 203px;
         width: 100%;
 
         img {
             width: 100%;
             height: 100%;
+            object-fit: contain
         }
     }
 
@@ -92,7 +98,6 @@ $font-size: 14px;
         &-p {
             @include news-paragraph;
         }
-
     }
 }
 
