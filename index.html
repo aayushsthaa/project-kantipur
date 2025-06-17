@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,7 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
@@ -38,16 +38,59 @@
                 stroke="black" stroke-width="1.5" stroke-miterlimit="10" />
         </svg>
     </header>
+        <div class="menu-container hidden-menu">
+        <div class="create-account-container">
+            <div class="create-account-text">
+                <h2>Create an account</h2>
+                <p>To access all premium features.</p>
+            </div>
+            <button class="create-account-button">Sign up</button>
+        </div>
+        <div class="dark-mode-container">
+            <h2 class="dark-mode-text">Dark Mode</h2>
+<div class="cont">
+        <div class="toggle">
+            <input type="checkbox" id="mode-toggle" class="toggle__input">
+            <label for="mode-toggle" class="toggle__label"></label>
+        </div>
+    </div>
+        </div>
+        <div class="menu">
+            <h2 class="menu-header">Categories</h2>
+            <ul class="menu-ul">
+                <li class="menu-item"><a href="" class="menu-links">समाचार</a></li>
+                <li class="menu-item"><a href="" class="menu-links">अर्थ / वाणिज्य</a></li>
+                <li class="menu-item"><a href="" class="menu-links">विचार</a></li>
+                <li class="menu-item"><a href="" class="menu-links">खेलकुद</a></li>
+                <li class="menu-item"><a href="" class="menu-links">उपत्यका</a></li>
+                <li class="menu-item"><a href="" class="menu-links">कोसेली</a></li>
+                <li class="menu-item"><a href="" class="menu-links">विश्व</a></li>
+                <li class="menu-item"><a href="" class="menu-links">मनोरञ्जन</a></li>
+                <li class="menu-item"><a href="" class="menu-links">फोटोफिचर</a></li>
+                <li class="menu-item"><a href="" class="menu-links">जीवनशैली</a></li>
+                <li class="menu-item"><a href="" class="menu-links">साहित्य/विविध</a></li>
+                <li class="menu-item"><a href="" class="menu-links">विज्ञान र प्रविधि</a></li>
+                <li class="menu-item"><a href="" class="menu-links">स्वास्थ्य</a></li>
+            </ul>
+            <div class="menu-footer">
+                <figure class="menu-footer-image">
+                    <img src="./images/logo 1.png" alt="">
+                </figure>
+                <p class="menu-footer-p">Version 1.01</p>
+            </div>
+        </div>
+    </div>
+<div class="all-container">
     <div class="news-category-container">
         <ul class="news-category">
             <li class="news-category-item">
-                <a href="" class="news-category-item-link active">All</a>
+                <a href="./index.html" class="news-category-item-link active">All</a>
             </li>
             <li class="news-category-item">
-                <a href="" class="news-category-item-link">News</a>
+                <a href="./pages/news.html" class="news-category-item-link">News</a>
             </li>
             <li class="news-category-item">
-                <a href="" class="news-category-item-link">Finance/Commerce</a>
+                <a href="./pages/finance.html" class="news-category-item-link">Finance/Commerce</a>
             </li>
             <li class="news-category-item">
                 <a href="" class="news-category-item-link">Politics</a>
@@ -56,10 +99,10 @@
                 <a href="" class="news-category-item-link">Kathmandu</a>
             </li>
             <li class="news-category-item">
-                <a href="" class="news-category-item-link">Bhaktapur</a>
+                <a href="" class="news-category-item-link">World</a>
             </li>
             <li class="news-category-item">
-                <a href="" class="news-category-item-link">Lalitpur</a>
+                <a href="" class="news-category-item-link">Sports</a>
             </li>
         </ul>
     </div>
@@ -588,7 +631,7 @@
                         रेखा शर्मा
                     </h3>
                 </div>
-                <button class="secondary-article-profile-button">+ Follow</buttton>
+                <button class="secondary-article-profile-button">+ Follow</button>
             </div>
             <div class="secondary-article-container">
                 <div class="secondary-article-content">
@@ -858,8 +901,9 @@
             </div>
         </a>
     </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/home.js"></script>
+    <script src="./js/index.js"></script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -868,7 +912,6 @@
             loop: true
         });
         var swiper = new Swiper(".mySwiper-2", {
-            slidesPerView: 1.7,
             spaceBetween: 16,
         });
     </script>
