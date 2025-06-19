@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="login-header">
+        <div class="login-header-left">
+            <a href="../index.html" class="Login-header-link">
+                <figure class="login-back">
+                    <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.75996 0.906677L1.66663 9.00001L9.75996 17.0933M24.3333 9.00001H1.89329"
+                            stroke="#326CAC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </figure>
+            </a>
+            <h2 class="login-header-header">Log in</h2>
+        </div>
+        <div class="login-header-right">
+            <figure class="image">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.9999 9.33325V15.1666M13.9999 25.6666C20.4166 25.6666 25.6666 20.4166 25.6666 13.9999C25.6666 7.58325 20.4166 2.33325 13.9999 2.33325C7.58325 2.33325 2.33325 7.58325 2.33325 13.9999C2.33325 20.4166 7.58325 25.6666 13.9999 25.6666Z"
+                        stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.9941 18.6667H14.0046" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+            </figure>
+        </div>
+    </div>
+    <div class="login-top-container">
+        <div class="login-top">
+            <h2 class="login-top-header">Log into your account</h2>
+            <p class="login-top-p">Don't have an account? <a href="./register.html" class="login-top-p-link">Register
+                    now</a></p>
+        </div>
+    </div>
+    <div class="login-content">
+        <section class="quick-login">
+            <p>For quick log in</p>
+            <div class="quick-login-btn">
+                <figure class="quick-login-btn-image">
+                    <img src="../images/google-logo.png" alt="google-logo">
+                </figure>
+                <div class="quick-login-btn-text">
+                    <p>Continue with google</p>
+                </div>
+            </div>
+            <div class="quick-login-btn">
+                <figure class="quick-login-btn-image">
+                    <img src="../images/apple-logo.png" alt="google-logo">
+                </figure>
+                <div class="quick-login-btn-text">
+                    <p>Continue with Apple</p>
+                </div>
+            </div>
+            <div class="quick-login-btn">
+                <figure class="quick-login-btn-image">
+                    <img src="../images/facebook-logo.png" alt="google-logo">
+                </figure>
+                <div class="quick-login-btn-text">
+                    <p>Continue with Facebook</p>
+                </div>
+            </div>
+        </section>
+        <div class="or">
+            <p>OR</p>
+        </div>
+        <section class="login">
+            <p class="login-text">Log in with your email</p>
+            <form action class="login-form">
+                <input type="email" name="email" id="email" placeholder="Email address">
+                <input type="password" name="password" id="password"placeholder="Password">
+                <div class="button-container">
+                    <button class="login-form-btn">Log in</button>
+                    <a href="./reset-password.html" class="forgot-pass">Forgot password?
+                    </a>
+                </div>
+            </form>
+            <p class="terms-text">By continuing, you acknowledge that you have read and understood, and agree to Kantipur’s Terms of
+                Service and Privacy Policy.</p>
+        </section>
+    </div>
+    <script src="../js/darkmode.js"></script>
+</body>
+
+</html>

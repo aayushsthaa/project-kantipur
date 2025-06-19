@@ -4,8 +4,8 @@ body {
     background-color: $background-light;
 }
 
-// Bichar Header Section
-.bichar-header {
+// bivid Header Section
+.bivid-header {
     @include flex-direction(row, 20px);
     padding: 27px 0 21px 16px;
     align-items: center;
@@ -17,8 +17,8 @@ body {
     }
 }
 
-// Bichar Navigation
-.bichar-navigation {
+// bivid Navigation
+.bivid-navigation {
     padding: 16px 25px;
     border-bottom: 1px solid $divider-color;
 
@@ -55,7 +55,7 @@ body {
     }
 }
 
-.bichar-date {
+.bivid-date {
     @include flex-space-between(row);
     background-color: $secondary-backgorund;
     padding: 16px;
@@ -84,7 +84,7 @@ body {
 
 .kantipur-share {
     @include flex-space-between(row);
-
+    padding-bottom: 12px;
     &-p {
         color: $toggle-light;
         font-size: 14px;
@@ -133,10 +133,9 @@ body {
                 width: 32px;
                 height: 32px;
 
-                img{
+                i {
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
                 }
             }
         }

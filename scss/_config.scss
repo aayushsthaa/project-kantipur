@@ -190,7 +190,7 @@ h1,h2,p,a,p{
   .navigation-bottom-link{
     color: $text-light;
   }
-  button{
+  .button-hollow {
     background-color: $secondary-backgorund !important;
   }
   .create-account-container{
@@ -212,11 +212,13 @@ h1,h2,p,a,p{
   .unred{
     background-color: $secondary-color;
   }
-  .notification-date,.bichar-date{
-    background-color: $secondary-color;
+  .news-radar-bottom,.register-top-container,.login-top-container,.bivid-date,.notification-date,.bichar-date{
+    background-color: $secondary-color !important;
   }
-  .news-radar-bottom{
-    background-color: $secondary-color;
+  .or{
+    p{
+          background-color: $background-dark !important;
+    }
   }
 }
 
@@ -226,4 +228,7 @@ h1,h2,p,a,p{
 }
 .main-content {
     padding: 0px 16px;
+}
+body{
+  font-family: $font-family-english;
 }

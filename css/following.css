@@ -116,11 +116,7 @@ body {
   font-family: "Inter";
 }
 
-body {
-  background-color: white;
-}
-
-.bichar-header {
+.following-header {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -128,189 +124,46 @@ body {
   align-items: center;
   border-bottom: 1px solid #DDDDDD;
 }
-.bichar-header-header {
-  font-family: "Mukta";
-  font-size: 22px;
+.following-header-header {
+  font-size: 24px;
+  font-family: "Inter";
   font-weight: 600;
-  line-height: 22px;
   color: #326CAC;
 }
 
-.bichar-navigation {
-  padding: 16px 25px;
-  border-bottom: 1px solid #DDDDDD;
-}
-.bichar-navigation-ul {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  list-style: none;
-}
-.bichar-navigation-ul-item {
-  position: relative;
-}
-.bichar-navigation-ul-item-link {
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: "Mukta";
-}
-.bichar-navigation-ul-item-link.active {
-  color: #326CAC;
-  position: relative;
-}
-.bichar-navigation-ul-item-link.active::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background: #204A8E;
-  top: 41px;
-  left: -7px;
-}
-
-.bichar-date {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #F5F8FB;
-  padding: 16px;
-  border-top: 1px solid #DDDDDD;
-}
-.bichar-date-text {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  color: #326CAC;
-}
-.bichar-date-text-day {
-  font-weight: 600;
-}
-.bichar-date-text p {
-  font-size: 16px;
-  font-family: "Mukta";
-}
-.bichar-date-button {
-  font-size: 14px;
-  background-color: rgba(50, 108, 172, 0.1);
-  color: #204A8E;
-  border: 1px solid #204A8E;
-  cursor: pointer;
-  width: 78px;
-  height: 32px;
-}
-
-.kantipur-share {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.kantipur-share-p {
-  color: #888888;
-  font-size: 14px;
-}
-.kantipur-share-buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-
-.secondary-article {
-  padding: 0px 16px;
-  padding-bottom: 21px;
-  border-bottom: 1px solid #DDDDDD;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.secondary-article-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.secondary-article-image {
-  min-width: 117px;
-  min-height: 87px;
-}
-.secondary-article-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 .secondary-article-profile {
+  border-bottom: 1px solid #DDDDDD;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 16px 0px;
-  margin-top: 8px;
+  padding: 16px;
   align-items: center;
 }
 .secondary-article-profile-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 16px;
   align-items: center;
 }
 .secondary-article-profile-container-name {
-  color: #326CAC;
+  font-family: "Mukta";
   font-size: 18px;
   font-weight: 600;
 }
 .secondary-article-profile-container-image {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 .secondary-article-profile-container-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .secondary-article-profile-button {
   width: 117px;
   height: 32px;
-  font-size: 14px;
-  background-color: rgba(50, 108, 172, 0.1);
-  color: #204A8E;
-  border: 1px solid #204A8E;
-  cursor: pointer;
-}
-.secondary-article-content {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-right: 17px;
+  background-color: #DDDDDD;
+  border: none;
 }
 
-.secondary-article-content-header {
-  font-family: "Mukta";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30px;
-}
-
-.secondary-article-content-p {
-  font-family: "Mukta";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.view-more {
-  text-align: center;
-  padding: 24px;
-  font-weight: 600;
-}
-.view-more a {
-  color: #326CAC;
-  font-size: 16px;
-  text-decoration: none;
-}
-.view-more-text {
-  text-decoration: underline;
-  margin-right: 12px;
-}
-.view-more-arrow {
-  text-decoration: none;
-}
-
-/*# sourceMappingURL=bichar.css.map */
+/*# sourceMappingURL=following.css.map */

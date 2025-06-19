@@ -74,7 +74,7 @@ body.dark-mode .sub-category-item-link {
 body.dark-mode .navigation-bottom-link {
   color: black;
 }
-body.dark-mode button {
+body.dark-mode .button-hollow {
   background-color: #F5F8FB !important;
 }
 body.dark-mode .create-account-container {
@@ -96,11 +96,11 @@ body.dark-mode .menu-footer {
 body.dark-mode .unred {
   background-color: #204A8E;
 }
-body.dark-mode .notification-date, body.dark-mode .bichar-date {
-  background-color: #204A8E;
+body.dark-mode .news-radar-bottom, body.dark-mode .register-top-container, body.dark-mode .login-top-container, body.dark-mode .bivid-date, body.dark-mode .notification-date, body.dark-mode .bichar-date {
+  background-color: #204A8E !important;
 }
-body.dark-mode .news-radar-bottom {
-  background-color: #204A8E;
+body.dark-mode .or p {
+  background-color: #181818 !important;
 }
 
 * {
@@ -120,7 +120,7 @@ body {
   background-color: white;
 }
 
-.bichar-header {
+.bivid-header {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -128,7 +128,7 @@ body {
   align-items: center;
   border-bottom: 1px solid #DDDDDD;
 }
-.bichar-header-header {
+.bivid-header-header {
   font-family: "Mukta";
   font-size: 22px;
   font-weight: 600;
@@ -136,30 +136,30 @@ body {
   color: #326CAC;
 }
 
-.bichar-navigation {
+.bivid-navigation {
   padding: 16px 25px;
   border-bottom: 1px solid #DDDDDD;
 }
-.bichar-navigation-ul {
+.bivid-navigation-ul {
   display: flex;
   flex-direction: row;
   gap: 25px;
   list-style: none;
 }
-.bichar-navigation-ul-item {
+.bivid-navigation-ul-item {
   position: relative;
 }
-.bichar-navigation-ul-item-link {
+.bivid-navigation-ul-item-link {
   color: black;
   text-decoration: none;
   font-weight: 600;
   font-family: "Mukta";
 }
-.bichar-navigation-ul-item-link.active {
+.bivid-navigation-ul-item-link.active {
   color: #326CAC;
   position: relative;
 }
-.bichar-navigation-ul-item-link.active::before {
+.bivid-navigation-ul-item-link.active::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -169,7 +169,7 @@ body {
   left: -7px;
 }
 
-.bichar-date {
+.bivid-date {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -177,20 +177,20 @@ body {
   padding: 16px;
   border-top: 1px solid #DDDDDD;
 }
-.bichar-date-text {
+.bivid-date-text {
   display: flex;
   flex-direction: row;
   gap: 8px;
   color: #326CAC;
 }
-.bichar-date-text-day {
+.bivid-date-text-day {
   font-weight: 600;
 }
-.bichar-date-text p {
+.bivid-date-text p {
   font-size: 16px;
   font-family: "Mukta";
 }
-.bichar-date-button {
+.bivid-date-button {
   font-size: 14px;
   background-color: rgba(50, 108, 172, 0.1);
   color: #204A8E;
@@ -204,6 +204,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 12px;
 }
 .kantipur-share-p {
   color: #888888;
@@ -260,10 +261,9 @@ body {
   width: 32px;
   height: 32px;
 }
-.secondary-article-profile-container-image img {
+.secondary-article-profile-container-image i {
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 .secondary-article-profile-button {
   width: 117px;
@@ -313,4 +313,4 @@ body {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=bichar.css.map */
+/*# sourceMappingURL=bivid.css.map */

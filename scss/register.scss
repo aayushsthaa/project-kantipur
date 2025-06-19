@@ -1,0 +1,147 @@
+@use './config' as *;
+
+.register-header {
+    padding: 27px 16px 21px 16px;
+    border-bottom: 1px solid $divider-color;
+    @include flex-space-between(row);
+
+    &-left {
+        @include flex-direction(row, 20px);
+        align-items: center;
+    }
+
+    &-header {
+        font-size: 24px;
+        font-family: $font-family-english;
+        font-weight: $normal;
+        color: $text-secondary-color;
+    }
+
+    &-right {
+        .image {
+            width: 28px;
+            height: 28px;
+
+            svg {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+}
+
+.register-top-container {
+    background-color: $secondary-backgorund;
+}
+
+.register-top {
+    background-image: url(../images/24.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 24px 16px;
+    color: $text-secondary-color;
+    @include flex-direction(column, 8px);
+
+    &-p {
+        color: #666666;
+        font-size: 14px;
+        &-link {
+            color: $text-secondary-color;
+            font-weight: $medium;
+        }
+    }
+}
+
+.register-content{
+    padding: 0px 16px;
+}
+.quick-login {
+    padding-bottom: 28px;
+    @include flex-direction(column, 16px);
+    p{
+        font-size: 14px;
+    }
+    &>p{
+        font-weight: $medium;
+    }
+    &-btn {
+        @include flex-direction(row, 12px);
+        padding: 12px;
+        align-items: center;
+        border: 1px solid $toggle-light;
+
+        &-image {
+            height: 24px;
+            width: 24px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-text {
+            text-align: center;
+            font-weight: 400;
+            width: 100%;
+            border-left: 1px solid $divider-color;
+        }
+    }
+}
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 24px 0px;
+        p{
+            font-size: 14px;
+            font-weight: $medium;
+    }
+    &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $divider-color;
+            top: 10px;
+            left: 0;
+    }
+    p{
+        background-color: white;
+        padding: 0px 10px;
+        z-index: 2;
+    }
+}
+
+.register{
+    @include flex-direction(column,16px);
+    width: 100%;
+    padding-top: 24px;
+    &-text{
+        font-weight: $medium;
+        font-size: 14px;
+    }
+    .terms-text{
+        font-weight: 400;
+        font-size: 14px
+    }
+    &-form{
+        @include flex-direction(column,16px);
+        input{
+            padding: 12px 16px;
+            border: 1px solid $toggle-light;
+        }
+
+        &-btn{
+                width: 100%;
+                padding: 12px;
+                color: $text-dark;
+                background-color: $text-secondary-color;
+                border: none;
+            }
+    }
+}
