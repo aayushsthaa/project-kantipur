@@ -1,0 +1,76 @@
+@use './config' as *;
+
+body {
+    background-color: $background-light;
+}
+
+.notification-header {
+    @include flex-direction(row, 20px);
+    padding: 27px 0px 21px 16px;
+    align-items: center;
+    border-bottom: 1px solid $divider-color;
+
+    &-header {
+        color: $text-secondary-color;
+        font-family: $font-family-nepali;
+        font-size: 24px;
+        font-weight: $medium;
+    }
+}
+
+.notification-unread {
+    padding: 16px;
+    color: $text-secondary-color;
+    font-weight: $medium;
+}
+
+.notification-date {
+    @include flex-direction(row, 8px);
+    padding: 16px;
+    border-top: 1px solid $divider-color;
+    color: $text-secondary-color;
+    background-color: $secondary-backgorund;
+    &-day {
+        font-weight: $medium;
+    }
+    p{
+        font-size: 16px;
+        font-family: $font-family-nepali;
+    }
+}
+
+
+.notification {
+    padding: 20px 16px;
+    @include flex-space-between(row);
+    column-gap: 55px;
+    border-bottom: 1px solid $divider-color;
+    &-text {
+        @include flex-direction(column, 8px);
+        align-items: flex-start;
+        justify-content: center;
+        h2 {
+            padding: 0px;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: $font-family-nepali;
+            border-bottom: none;
+            font-weight: $medium;
+        }
+
+        p {
+            color: $toggle-light;
+            font-size: 14px;
+        }
+    }
+    &-image{
+        max-width: 78px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.unred {
+    background-color: $tertary-background;
+    border-bottom: 1px solid white;
+}

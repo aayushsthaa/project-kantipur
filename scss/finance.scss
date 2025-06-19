@@ -170,105 +170,6 @@ i {
     }
 }
 
-.cont {
-    text-align: center;
-}
-
-.toggle {
-    position: relative;
-    display: inline-block;
-}
-
-.toggle__input {
-    display: none;
-}
-
-.toggle__label {
-    display: block;
-    width: 60px;
-    height: 30px;
-    background-color: $toggle-light;
-    border-radius: 99px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dark-mode .toggle__label {
-    background-color: $toggle-dark;
-}
-
-.toggle__input:checked+.toggle__label::after {
-    left: 32px;
-}
-
-.toggle__label::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 26px;
-    height: 26px;
-    background-color: $divider-color;
-    border-radius: 50%;
-    transition: left 0.3s ease;
-}
-
-
-body.dark-mode {
-    background-color: $background-dark;
-    color: $text-dark;
-    .samachar-container,.news-radar-top{
-            border-color: white;
-    }
-h2,h1,p,a,p{
-    color: $text-dark !important;
-  }
-
-  .menu-hamburger{
-        background: $text-dark;
-    &::before,
-    &::after {
-      background: $text-dark;
-    } 
-  }
-  .hamburger-active {
-    background: $text-light;
-    &::before,
-    &::after {
-      background: $text-dark;
-    }
-  }
-
-
-  // And for other text using tertiary color or borders:
-  .news-category,
-  .sub-category-item-link {
-    color: $text-dark;
-  }
-  .navigation-bottom-link{
-    color: $text-light;
-  }
-  button,.create-account-container .create-account-button{
-    background-color: white;
-  }
-  .create-account-container{
-    background-color: $background-dark;
-    color: $text-dark;
-  }
-  .dark-mode-container{
-    border-color: white;
-  }
-  .navigation-bottom{
-    background-color: $background-dark;
-    a{
-        color: white;
-    }
-  }
-    .menu-footer{
-    background-color: black;
-  }
-}
-
 
 .hidden-menu{
     display: none;
@@ -323,7 +224,7 @@ h2,h1,p,a,p{
     @include flex-space-between(row);
 
     &-p {
-        color: $tertary-color;
+        color: $toggle-light;
         font-size: 14px;
     }
 
@@ -436,7 +337,6 @@ h2,h1,p,a,p{
 
 .artha-header-container {
     @include flex-space-between(row);
-    margin-bottom: 12px;
 }
 
 .artha-header-button {

@@ -2,16 +2,17 @@ $font-family-english: 'Inter';
 $font-family-nepali: 'Mukta';
 $background-light: #FFFF;
 $secondary-color: #204A8E;
-$tertary-color: #888888;
+$text-secondary-color:#326CAC;
 $third-color: #D9D9D9;
 $secondary-backgorund: #F5F8FB;
+$tertary-background:#E0E9F3;
 $text-light: black;
 $background-dark: #181818;
 $text-dark: #ffffff;
 $toggle-light: #888888;
 $toggle-dark: #204A8E;
 $divider-color: #DDDDDD;
-$bold: 900;
+$bold: 800;
 $normal: 400;
 $medium: 600;
 $font-size: 14px;
@@ -43,30 +44,35 @@ $font-size: 14px;
     font-size: 24px;
     color: $secondary-color;
     font-weight: $bold;
+    margin-bottom: 12px;
 }
 
 @mixin news-header {
     font-family: $font-family-nepali;
     font-size: 22px;
     font-weight: $medium;
+    line-height: 22px;
 }
 
 @mixin news-paragraph {
     font-family: $font-family-nepali;
     font-size: 16px;
     font-weight: $normal;
+    line-height:18px;
 }
 
 @mixin secondary-header {
     font-family: $font-family-nepali;
     font-size: 18px;
     font-weight: $medium;
+    line-height: 30px;
 }
 
 @mixin secondary-paragaraph {
     font-family: $font-family-nepali;
     font-size: 14px;
     font-weight: $normal;
+    line-height: 24px;
 }
 
 @mixin hero-content {
@@ -93,15 +99,131 @@ $font-size: 14px;
 
         &-header {
             @include news-header;
+            line-height:30px; 
         }
 
         &-p {
             @include news-paragraph;
+            line-height: 24px;
         }
     }
+}
+
+body{
+    font-family: $font-family-english;
+}
+.cont {
+    text-align: center;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+}
+
+.toggle__input {
+    display: none;
+}
+
+.toggle__label {
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: $toggle-light;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .toggle__label {
+    background-color: $toggle-dark;
+}
+
+.toggle__input:checked+.toggle__label::after {
+    left: 32px;
+}
+
+.toggle__label::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: $divider-color;
+    border-radius: 50%;
+    transition: left 0.3s ease;
+}
+
+
+body.dark-mode {
+    background-color: $background-dark;
+    color: $text-dark;
+    .samachar-container,.news-radar-top{
+            border-color: white;
+    }
+h1,h2,p,a,p{
+    color: $text-dark !important;
+  }
+
+  .menu-hamburger{
+        background: $text-dark;
+    &::before,
+    &::after {
+      background: $text-dark;
+    } 
+  }
+  .hamburger-active {
+    background: $text-light;
+    &::before,
+    &::after {
+      background: $text-dark;
+    }
+  }
+
+
+  // And for other text using tertiary color or borders:
+  .news-category,
+  .sub-category-item-link {
+    color: $text-dark;
+  }
+  .navigation-bottom-link{
+    color: $text-light;
+  }
+  button{
+    background-color: $secondary-backgorund !important;
+  }
+  .create-account-container{
+    background-color: $background-dark;
+    color: $text-dark;
+  }
+  .dark-mode-container{
+    border-color: white;
+  }
+  .navigation-bottom{
+    background-color: $secondary-color;
+    a{
+        color: white;
+    }
+  }
+    .menu-footer{
+    background-color: black;
+  }
+  .unred{
+    background-color: $secondary-color;
+  }
+  .notification-date,.bichar-date{
+    background-color: $secondary-color;
+  }
+  .news-radar-bottom{
+    background-color: $secondary-color;
+  }
 }
 
 * {
     margin: 0px;
     padding: 0px;
+}
+.main-content {
+    padding: 0px 16px;
 }

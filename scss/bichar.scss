@@ -1,0 +1,185 @@
+@use './config' as *;
+
+body {
+    background-color: $background-light;
+}
+
+// Bichar Header Section
+.bichar-header {
+    @include flex-direction(row, 20px);
+    padding: 27px 0 21px 16px;
+    align-items: center;
+    border-bottom: 1px solid $divider-color;
+
+    &-header {
+        @include news-header;
+        color: $text-secondary-color;
+    }
+}
+
+// Bichar Navigation
+.bichar-navigation {
+    padding: 16px 25px;
+    border-bottom: 1px solid $divider-color;
+
+    &-ul {
+        @include flex-direction(row, 25px);
+        list-style: none;
+
+        &-item {
+            position: relative;
+
+            &-link {
+                color: $text-light;
+                text-decoration: none;
+                font-weight: $medium;
+                font-family: $font-family-nepali;
+
+                &.active {
+
+                    color: $text-secondary-color;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 50px;
+                        height: 3px;
+                        background: $secondary-color;
+                        top: 41px;
+                        left: -7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bichar-date {
+    @include flex-space-between(row);
+    background-color: $secondary-backgorund;
+    padding: 16px;
+    border-top: 1px solid $divider-color;
+
+    &-text {
+        @include flex-direction(row, 8px);
+        color: $text-secondary-color;
+
+        &-day {
+            font-weight: $medium;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: $font-family-nepali;
+        }
+    }
+    &-button{
+        @include button-hollow;
+        width: 78px;
+        height: 32px;
+    }
+
+}
+
+.kantipur-share {
+    @include flex-space-between(row);
+
+    &-p {
+        color: $toggle-light;
+        font-size: 14px;
+    }
+
+    &-buttons {
+        @include flex-direction(row, 30px);
+    }
+}
+.secondary-article {
+    padding: 0px 16px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid $divider-color;
+    @include flex-direction(column, 12px);
+
+    &-container {
+        @include flex-space-between(row);
+    }
+
+    &-image {
+        min-width: 117px;
+        min-height: 87px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &-profile {
+        @include flex-space-between(row);
+        padding: 16px 0px;
+        margin-top: 8px;
+        align-items: center;
+        &-container {
+            @include flex-direction(row, 10px);
+            align-items: center;
+            &-name {
+                color: $text-secondary-color;
+                font-size: 18px;
+                font-weight: $medium;
+            }
+
+            &-image {
+                width: 32px;
+                height: 32px;
+
+                i {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &-button {
+            width: 117px;
+            height: 32px;
+            @include button-hollow;
+        }
+
+    }
+
+    &-content {
+        @include flex-direction(column, 8px);
+        padding-right: 17px;
+    }
+
+}
+
+.secondary-article-content-header {
+    @include secondary-header;
+}
+
+.secondary-article-content-p {
+    @include secondary-paragaraph;
+}
+
+.view-more {
+    text-align: center;
+    padding: 24px;
+    font-weight: $medium;
+
+    a {
+        color: $text-secondary-color;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    &-text {
+        text-decoration: underline;
+        margin-right: 12px;
+    }
+
+    &-arrow {
+        text-decoration: none;
+    }
+}
