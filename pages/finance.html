@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
@@ -20,13 +21,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/finance.css" />
 </head>
+
 <body>
     <header class="kantipur-header">
-            <span class="menu-hamburger"></span>
+        <span class="menu-hamburger"></span>
         <figure class="main-logo">
             <img src="../images/logo 1.png" alt="kantipur-logo" />
         </figure>
-               <a href="./notification.html">
+        <a href="./notification.html">
             <figure class="notification-image">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -39,7 +41,7 @@
             </figure>
         </a>
     </header>
-        <div class="menu-container hidden-menu">
+    <div class="menu-container hidden-menu">
         <div class="create-account-container">
             <div class="create-account-text">
                 <h2>Create an account</h2>
@@ -49,19 +51,19 @@
         </div>
         <div class="dark-mode-container">
             <h2 class="dark-mode-text">Dark Mode</h2>
-<div class="cont">
-        <div class="toggle">
-            <input type="checkbox" id="mode-toggle" class="toggle__input">
-            <label for="mode-toggle" class="toggle__label"></label>
-        </div>
-    </div>
+            <div class="cont">
+                <div class="toggle">
+                    <input type="checkbox" id="mode-toggle" class="toggle__input">
+                    <label for="mode-toggle" class="toggle__label"></label>
+                </div>
+            </div>
         </div>
         <div class="menu">
             <h2 class="menu-header">Categories</h2>
             <ul class="menu-ul">
-                <li class="menu-item"><a href="" class="menu-links">समाचार</a></li>
-                <li class="menu-item"><a href="" class="menu-links">अर्थ / वाणिज्य</a></li>
-                <li class="menu-item"><a href="" class="menu-links">विचार</a></li>
+                <li class="menu-item"><a href="./news.html" class="menu-links">समाचार</a></li>
+                <li class="menu-item"><a href="./finance.html" class="menu-links">अर्थ / वाणिज्य</a></li>
+                <li class="menu-item"><a href="./bichar.html" class="menu-links">विचार</a></li>
                 <li class="menu-item"><a href="" class="menu-links">खेलकुद</a></li>
                 <li class="menu-item"><a href="" class="menu-links">उपत्यका</a></li>
                 <li class="menu-item"><a href="" class="menu-links">कोसेली</a></li>
@@ -83,48 +85,83 @@
     </div>
     <div class="all-container">
         <div class="news-category-container">
-        <ul class="news-category">
-            <li class="news-category-item">
-                <a href="../index.html" class="news-category-item-link">All</a>
-            </li>
-            <li class="news-category-item">
-                <a href="./news.html" class="news-category-item-link ">News</a>
-            </li>
-            <li class="news-category-item">
-                <a href="" class="news-category-item-link active">Finance/Commerce</a>
-            </li>
-            <li class="news-category-item">
-                <a href="" class="news-category-item-link">Politics</a>
-            </li>
-            <li class="news-category-item">
-                <a href="" class="news-category-item-link">Kathmandu</a>
-            </li>
-            <li class="news-category-item">
-                <a href="" class="news-category-item-link">World</a>
-            </li>
-            <li class="news-category-item">
-                <a href="" class="news-category-item-link">Sports</a>
-            </li>
-        </ul>
-    </div>
-    <div class="artha-container main-content">
-        <div class="artha-header-container">
-            <h2 class="artha-header header">अर्थ / वाणिज्य</h2>
-            <button class="artha-header-button">+ Follow</button>
+            <ul class="news-category">
+                <li class="news-category-item">
+                    <a href="../index.html" class="news-category-item-link">All</a>
+                </li>
+                <li class="news-category-item">
+                    <a href="./news.html" class="news-category-item-link ">News</a>
+                </li>
+                <li class="news-category-item">
+                    <a href="" class="news-category-item-link active">Finance/Commerce</a>
+                </li>
+                <li class="news-category-item">
+                    <a href="" class="news-category-item-link">Politics</a>
+                </li>
+                <li class="news-category-item">
+                    <a href="" class="news-category-item-link">Kathmandu</a>
+                </li>
+                <li class="news-category-item">
+                    <a href="" class="news-category-item-link">World</a>
+                </li>
+                <li class="news-category-item">
+                    <a href="" class="news-category-item-link">Sports</a>
+                </li>
+            </ul>
         </div>
-        <div class="artha-hero">
-            <figure class="artha-hero-image">
-                <img src="../images/7.png" alt="">
-            </figure>
-            <div class="artha-hero-content">
-                <div class="artha-hero-content-time">
-                    <p style="color:#204A8E; font-size: 14px;">अर्थ / वाणिज्य</p>
-                    <p style="font-size: 14px;">१ घण्टा अघि </p>
+        <div class="artha-container main-content">
+            <div class="artha-header-container">
+                <h2 class="artha-header header">अर्थ / वाणिज्य</h2>
+                <button class="artha-header-button">+ Follow</button>
+            </div>
+            <div class="artha-hero">
+                <figure class="artha-hero-image">
+                    <img src="../images/7.png" alt="">
+                </figure>
+                <div class="artha-hero-content">
+                    <div class="artha-hero-content-time">
+                        <p style="color:#204A8E; font-size: 14px;">अर्थ / वाणिज्य</p>
+                        <p style="font-size: 14px;">१ घण्टा अघि </p>
+                    </div>
+                    <h2 class="artha-hero-content-header">प्रतिसेयर आम्दानी १८५ रुपैयाँ भएको आत्मनिर्भर लघुवित्तको आईपीओ
+                        खुल्यो</h2>
+                    <p class="artha-hero-content-p">सर्वसाधारणका लागि आत्मनिर्भर लघुवित्त वित्तीय संस्थाको प्राथमिक सेयर
+                        (आईपीओ) खुलेको छ ।</p>
+                    <div class="kantipur-share">
+                        <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
+                        <div class="kantipur-share-buttons">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.89 5.88H5.11C4.28599 5.88264 3.49648 6.21115 2.91381 6.79382C2.33114 7.37648 2.00264 8.16599 2 8.99V20.35C2 21.8 3.04 22.42 4.31 21.71L8.24 19.52C8.66 19.29 9.34 19.29 9.75 19.52L13.68 21.71C14.95 22.42 15.99 21.8 15.99 20.35V8.99C15.9907 8.58225 15.911 8.17836 15.7556 7.80139C15.6001 7.42442 15.372 7.08176 15.0841 6.79297C14.7962 6.50418 14.4543 6.27492 14.0779 6.11827C13.7014 5.96162 13.2978 5.88066 12.89 5.88Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M22 5.11V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.99C16 7.28 14.6 5.88 12.89 5.88H8V5.11C8 3.4 9.4 2 11.11 2H18.89C20.6 2 22 3.4 22 5.11Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.7996 0.500732C13.8754 0.500732 12.2996 2.07662 12.2996 4.00073C12.2996 4.29362 12.3988 4.55546 12.4675 4.82788L6.47241 7.8269C5.82912 7.0377 4.89031 6.50073 3.79956 6.50073C1.87545 6.50073 0.299561 8.07662 0.299561 10.0007C0.299561 11.9248 1.87545 13.5007 3.79956 13.5007C4.89031 13.5007 5.82912 12.9638 6.47241 12.1746L12.4675 15.1736C12.3988 15.446 12.2996 15.7078 12.2996 16.0007C12.2996 17.9248 13.8754 19.5007 15.7996 19.5007C17.7237 19.5007 19.2996 17.9248 19.2996 16.0007C19.2996 14.0766 17.7237 12.5007 15.7996 12.5007C14.7088 12.5007 13.77 13.0377 13.1267 13.8269L7.13159 10.8279C7.20029 10.5555 7.29956 10.2936 7.29956 10.0007C7.29956 9.70785 7.20029 9.446 7.13159 9.17358L13.1267 6.17456C13.77 6.96376 14.7088 7.50073 15.7996 7.50073C17.7237 7.50073 19.2996 5.92484 19.2996 4.00073C19.2996 2.07662 17.7237 0.500732 15.7996 0.500732ZM15.7996 2.00073C16.913 2.00073 17.7996 2.88728 17.7996 4.00073C17.7996 5.11419 16.913 6.00073 15.7996 6.00073C14.6861 6.00073 13.7996 5.11419 13.7996 4.00073C13.7996 2.88728 14.6861 2.00073 15.7996 2.00073ZM3.79956 8.00073C4.91301 8.00073 5.79956 8.88728 5.79956 10.0007C5.79956 11.1142 4.91301 12.0007 3.79956 12.0007C2.68611 12.0007 1.79956 11.1142 1.79956 10.0007C1.79956 8.88728 2.68611 8.00073 3.79956 8.00073ZM15.7996 14.0007C16.913 14.0007 17.7996 14.8873 17.7996 16.0007C17.7996 17.1142 16.913 18.0007 15.7996 18.0007C14.6861 18.0007 13.7996 17.1142 13.7996 16.0007C13.7996 14.8873 14.6861 14.0007 15.7996 14.0007Z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                    </div>
                 </div>
-                <h2 class="artha-hero-content-header">प्रतिसेयर आम्दानी १८५ रुपैयाँ भएको आत्मनिर्भर लघुवित्तको आईपीओ
-                    खुल्यो</h2>
-                <p class="artha-hero-content-p">सर्वसाधारणका लागि आत्मनिर्भर लघुवित्त वित्तीय संस्थाको प्राथमिक सेयर
-                    (आईपीओ) खुलेको छ ।</p>
+            </div>
+            <div class="secondary-article">
+                <div class="secondary-article-container">
+                    <div class="secondary-article-content">
+                        <h2 class="secondary-article-content-header">तीन सातामा ५ हजार घट्यो सुनको भाउ
+                        </h2>
+                        <p class="secondary-article-content-p">सुनको भाउ क्रमिक रुपमा ओरालो लागेको छ । माघ १९ गते उच्चतम
+                            मूल्यको रेकर्ड ...</p>
+                    </div>
+                    <figure class="secondary-article-image">
+                        <img src="../images/3.png" alt="">
+                    </figure>
+                </div>
                 <div class="kantipur-share">
                     <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
                     <div class="kantipur-share-buttons">
@@ -145,275 +182,230 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="secondary-article">
             <div class="secondary-article-container">
                 <div class="secondary-article-content">
-                    <h2 class="secondary-article-content-header">तीन सातामा ५ हजार घट्यो सुनको भाउ
-                    </h2>
-                    <p class="secondary-article-content-p">सुनको भाउ क्रमिक रुपमा ओरालो लागेको छ । माघ १९ गते उच्चतम
-                        मूल्यको रेकर्ड ...</p>
-                </div>
-                <figure class="secondary-article-image">
-                    <img src="../images/3.png" alt="">
-                </figure>
-            </div>
-            <div class="kantipur-share">
-                <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
-                <div class="kantipur-share-buttons">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.89 5.88H5.11C4.28599 5.88264 3.49648 6.21115 2.91381 6.79382C2.33114 7.37648 2.00264 8.16599 2 8.99V20.35C2 21.8 3.04 22.42 4.31 21.71L8.24 19.52C8.66 19.29 9.34 19.29 9.75 19.52L13.68 21.71C14.95 22.42 15.99 21.8 15.99 20.35V8.99C15.9907 8.58225 15.911 8.17836 15.7556 7.80139C15.6001 7.42442 15.372 7.08176 15.0841 6.79297C14.7962 6.50418 14.4543 6.27492 14.0779 6.11827C13.7014 5.96162 13.2978 5.88066 12.89 5.88Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M22 5.11V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.99C16 7.28 14.6 5.88 12.89 5.88H8V5.11C8 3.4 9.4 2 11.11 2H18.89C20.6 2 22 3.4 22 5.11Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.7996 0.500732C13.8754 0.500732 12.2996 2.07662 12.2996 4.00073C12.2996 4.29362 12.3988 4.55546 12.4675 4.82788L6.47241 7.8269C5.82912 7.0377 4.89031 6.50073 3.79956 6.50073C1.87545 6.50073 0.299561 8.07662 0.299561 10.0007C0.299561 11.9248 1.87545 13.5007 3.79956 13.5007C4.89031 13.5007 5.82912 12.9638 6.47241 12.1746L12.4675 15.1736C12.3988 15.446 12.2996 15.7078 12.2996 16.0007C12.2996 17.9248 13.8754 19.5007 15.7996 19.5007C17.7237 19.5007 19.2996 17.9248 19.2996 16.0007C19.2996 14.0766 17.7237 12.5007 15.7996 12.5007C14.7088 12.5007 13.77 13.0377 13.1267 13.8269L7.13159 10.8279C7.20029 10.5555 7.29956 10.2936 7.29956 10.0007C7.29956 9.70785 7.20029 9.446 7.13159 9.17358L13.1267 6.17456C13.77 6.96376 14.7088 7.50073 15.7996 7.50073C17.7237 7.50073 19.2996 5.92484 19.2996 4.00073C19.2996 2.07662 17.7237 0.500732 15.7996 0.500732ZM15.7996 2.00073C16.913 2.00073 17.7996 2.88728 17.7996 4.00073C17.7996 5.11419 16.913 6.00073 15.7996 6.00073C14.6861 6.00073 13.7996 5.11419 13.7996 4.00073C13.7996 2.88728 14.6861 2.00073 15.7996 2.00073ZM3.79956 8.00073C4.91301 8.00073 5.79956 8.88728 5.79956 10.0007C5.79956 11.1142 4.91301 12.0007 3.79956 12.0007C2.68611 12.0007 1.79956 11.1142 1.79956 10.0007C1.79956 8.88728 2.68611 8.00073 3.79956 8.00073ZM15.7996 14.0007C16.913 14.0007 17.7996 14.8873 17.7996 16.0007C17.7996 17.1142 16.913 18.0007 15.7996 18.0007C14.6861 18.0007 13.7996 17.1142 13.7996 16.0007C13.7996 14.8873 14.6861 14.0007 15.7996 14.0007Z"
-                            fill="black" />
-                    </svg>
-
-                </div>
-            </div>
-        </div>
-        <div class="secondary-article">
-            <div class="secondary-article-container">
-                <div class="secondary-article-content">
-                    <h2 class="secondary-article-content-header">नेपालको जलविद्युत्‌मा चिनियाँ लगानीकर्ता सकारात्मक
-                    </h2>
-                    <p class="secondary-article-content-p">पचिनियाँ लगानीकर्ताहरूले नेपालको जलविद्युत् क्षेत्रमा लगानीका
+                    <a href="./artha.html">
+                        <h2 class="secondary-article-content-header">नेपालको जलविद्युत्‌मा चिनियाँ लगानीकर्ता सकारात्मक
+                        </h2>
+                    </a>
+                    <p class="secondary-article-content-p">पचिनियाँ लगानीकर्ताहरूले नेपालको जलविद्युत् क्षेत्रमा
+                        लगानीका
                         प्रचुर ...</p>
                 </div>
                 <figure class="secondary-article-image">
-                    <img src="../images/4.png" alt="">
+                    <a href="./artha.html">
+                        <img src="../images/4.png" alt="">
+                    </a>
                 </figure>
             </div>
-            <div class="kantipur-share">
-                <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
-                <div class="kantipur-share-buttons">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.89 5.88H5.11C4.28599 5.88264 3.49648 6.21115 2.91381 6.79382C2.33114 7.37648 2.00264 8.16599 2 8.99V20.35C2 21.8 3.04 22.42 4.31 21.71L8.24 19.52C8.66 19.29 9.34 19.29 9.75 19.52L13.68 21.71C14.95 22.42 15.99 21.8 15.99 20.35V8.99C15.9907 8.58225 15.911 8.17836 15.7556 7.80139C15.6001 7.42442 15.372 7.08176 15.0841 6.79297C14.7962 6.50418 14.4543 6.27492 14.0779 6.11827C13.7014 5.96162 13.2978 5.88066 12.89 5.88Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M22 5.11V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.99C16 7.28 14.6 5.88 12.89 5.88H8V5.11C8 3.4 9.4 2 11.11 2H18.89C20.6 2 22 3.4 22 5.11Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.7996 0.500732C13.8754 0.500732 12.2996 2.07662 12.2996 4.00073C12.2996 4.29362 12.3988 4.55546 12.4675 4.82788L6.47241 7.8269C5.82912 7.0377 4.89031 6.50073 3.79956 6.50073C1.87545 6.50073 0.299561 8.07662 0.299561 10.0007C0.299561 11.9248 1.87545 13.5007 3.79956 13.5007C4.89031 13.5007 5.82912 12.9638 6.47241 12.1746L12.4675 15.1736C12.3988 15.446 12.2996 15.7078 12.2996 16.0007C12.2996 17.9248 13.8754 19.5007 15.7996 19.5007C17.7237 19.5007 19.2996 17.9248 19.2996 16.0007C19.2996 14.0766 17.7237 12.5007 15.7996 12.5007C14.7088 12.5007 13.77 13.0377 13.1267 13.8269L7.13159 10.8279C7.20029 10.5555 7.29956 10.2936 7.29956 10.0007C7.29956 9.70785 7.20029 9.446 7.13159 9.17358L13.1267 6.17456C13.77 6.96376 14.7088 7.50073 15.7996 7.50073C17.7237 7.50073 19.2996 5.92484 19.2996 4.00073C19.2996 2.07662 17.7237 0.500732 15.7996 0.500732ZM15.7996 2.00073C16.913 2.00073 17.7996 2.88728 17.7996 4.00073C17.7996 5.11419 16.913 6.00073 15.7996 6.00073C14.6861 6.00073 13.7996 5.11419 13.7996 4.00073C13.7996 2.88728 14.6861 2.00073 15.7996 2.00073ZM3.79956 8.00073C4.91301 8.00073 5.79956 8.88728 5.79956 10.0007C5.79956 11.1142 4.91301 12.0007 3.79956 12.0007C2.68611 12.0007 1.79956 11.1142 1.79956 10.0007C1.79956 8.88728 2.68611 8.00073 3.79956 8.00073ZM15.7996 14.0007C16.913 14.0007 17.7996 14.8873 17.7996 16.0007C17.7996 17.1142 16.913 18.0007 15.7996 18.0007C14.6861 18.0007 13.7996 17.1142 13.7996 16.0007C13.7996 14.8873 14.6861 14.0007 15.7996 14.0007Z"
-                            fill="black" />
-                    </svg>
-
+            <div class="secondary-article">
+                <div class="secondary-article-container">
+                    <div class="secondary-article-content">
+                        <h2 class="secondary-article-content-header">चक्रपथ विस्तारको काम अघि बढाउन संयुक्तरूपमा
+                            निरीक्षण
+                        </h2>
+                        <p class="secondary-article-content-p">एकभन्दा बढीबाट ऋण लिन नपाइने, यसअघि बढी संस्थाबाट लिएको
+                            ऋणसमेत ...</p>
+                    </div>
+                    <figure class="secondary-article-image">
+                        <img src="../images/5.png" alt="">
+                    </figure>
                 </div>
+                <div class="kantipur-share">
+                    <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
+                    <div class="kantipur-share-buttons">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.89 5.88H5.11C4.28599 5.88264 3.49648 6.21115 2.91381 6.79382C2.33114 7.37648 2.00264 8.16599 2 8.99V20.35C2 21.8 3.04 22.42 4.31 21.71L8.24 19.52C8.66 19.29 9.34 19.29 9.75 19.52L13.68 21.71C14.95 22.42 15.99 21.8 15.99 20.35V8.99C15.9907 8.58225 15.911 8.17836 15.7556 7.80139C15.6001 7.42442 15.372 7.08176 15.0841 6.79297C14.7962 6.50418 14.4543 6.27492 14.0779 6.11827C13.7014 5.96162 13.2978 5.88066 12.89 5.88Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M22 5.11V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.99C16 7.28 14.6 5.88 12.89 5.88H8V5.11C8 3.4 9.4 2 11.11 2H18.89C20.6 2 22 3.4 22 5.11Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.7996 0.500732C13.8754 0.500732 12.2996 2.07662 12.2996 4.00073C12.2996 4.29362 12.3988 4.55546 12.4675 4.82788L6.47241 7.8269C5.82912 7.0377 4.89031 6.50073 3.79956 6.50073C1.87545 6.50073 0.299561 8.07662 0.299561 10.0007C0.299561 11.9248 1.87545 13.5007 3.79956 13.5007C4.89031 13.5007 5.82912 12.9638 6.47241 12.1746L12.4675 15.1736C12.3988 15.446 12.2996 15.7078 12.2996 16.0007C12.2996 17.9248 13.8754 19.5007 15.7996 19.5007C17.7237 19.5007 19.2996 17.9248 19.2996 16.0007C19.2996 14.0766 17.7237 12.5007 15.7996 12.5007C14.7088 12.5007 13.77 13.0377 13.1267 13.8269L7.13159 10.8279C7.20029 10.5555 7.29956 10.2936 7.29956 10.0007C7.29956 9.70785 7.20029 9.446 7.13159 9.17358L13.1267 6.17456C13.77 6.96376 14.7088 7.50073 15.7996 7.50073C17.7237 7.50073 19.2996 5.92484 19.2996 4.00073C19.2996 2.07662 17.7237 0.500732 15.7996 0.500732ZM15.7996 2.00073C16.913 2.00073 17.7996 2.88728 17.7996 4.00073C17.7996 5.11419 16.913 6.00073 15.7996 6.00073C14.6861 6.00073 13.7996 5.11419 13.7996 4.00073C13.7996 2.88728 14.6861 2.00073 15.7996 2.00073ZM3.79956 8.00073C4.91301 8.00073 5.79956 8.88728 5.79956 10.0007C5.79956 11.1142 4.91301 12.0007 3.79956 12.0007C2.68611 12.0007 1.79956 11.1142 1.79956 10.0007C1.79956 8.88728 2.68611 8.00073 3.79956 8.00073ZM15.7996 14.0007C16.913 14.0007 17.7996 14.8873 17.7996 16.0007C17.7996 17.1142 16.913 18.0007 15.7996 18.0007C14.6861 18.0007 13.7996 17.1142 13.7996 16.0007C13.7996 14.8873 14.6861 14.0007 15.7996 14.0007Z"
+                                fill="black" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="secondary-article">
+                <div class="secondary-article-container">
+                    <div class="secondary-article-content">
+                        <h2 class="secondary-article-content-header">गुन्द्रुकको ब्रान्ड बनाइँदै</h2>
+                        <p class="secondary-article-content-p">साग अमिल्याएर बनाइने तरकारीजन्य परिकार हो गुन्द्रुक ।
+                            विदेशमा
+                            समेत ‘विशेष ...</p>
+                    </div>
+                    <figure class="secondary-article-image">
+                        <img src="../images/6.png" alt="">
+                    </figure>
+                </div>
+                <div class="kantipur-share">
+                    <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
+                    <div class="kantipur-share-buttons">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.89 5.88H5.11C4.28599 5.88264 3.49648 6.21115 2.91381 6.79382C2.33114 7.37648 2.00264 8.16599 2 8.99V20.35C2 21.8 3.04 22.42 4.31 21.71L8.24 19.52C8.66 19.29 9.34 19.29 9.75 19.52L13.68 21.71C14.95 22.42 15.99 21.8 15.99 20.35V8.99C15.9907 8.58225 15.911 8.17836 15.7556 7.80139C15.6001 7.42442 15.372 7.08176 15.0841 6.79297C14.7962 6.50418 14.4543 6.27492 14.0779 6.11827C13.7014 5.96162 13.2978 5.88066 12.89 5.88Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M22 5.11V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.99C16 7.28 14.6 5.88 12.89 5.88H8V5.11C8 3.4 9.4 2 11.11 2H18.89C20.6 2 22 3.4 22 5.11Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.7996 0.500732C13.8754 0.500732 12.2996 2.07662 12.2996 4.00073C12.2996 4.29362 12.3988 4.55546 12.4675 4.82788L6.47241 7.8269C5.82912 7.0377 4.89031 6.50073 3.79956 6.50073C1.87545 6.50073 0.299561 8.07662 0.299561 10.0007C0.299561 11.9248 1.87545 13.5007 3.79956 13.5007C4.89031 13.5007 5.82912 12.9638 6.47241 12.1746L12.4675 15.1736C12.3988 15.446 12.2996 15.7078 12.2996 16.0007C12.2996 17.9248 13.8754 19.5007 15.7996 19.5007C17.7237 19.5007 19.2996 17.9248 19.2996 16.0007C19.2996 14.0766 17.7237 12.5007 15.7996 12.5007C14.7088 12.5007 13.77 13.0377 13.1267 13.8269L7.13159 10.8279C7.20029 10.5555 7.29956 10.2936 7.29956 10.0007C7.29956 9.70785 7.20029 9.446 7.13159 9.17358L13.1267 6.17456C13.77 6.96376 14.7088 7.50073 15.7996 7.50073C17.7237 7.50073 19.2996 5.92484 19.2996 4.00073C19.2996 2.07662 17.7237 0.500732 15.7996 0.500732ZM15.7996 2.00073C16.913 2.00073 17.7996 2.88728 17.7996 4.00073C17.7996 5.11419 16.913 6.00073 15.7996 6.00073C14.6861 6.00073 13.7996 5.11419 13.7996 4.00073C13.7996 2.88728 14.6861 2.00073 15.7996 2.00073ZM3.79956 8.00073C4.91301 8.00073 5.79956 8.88728 5.79956 10.0007C5.79956 11.1142 4.91301 12.0007 3.79956 12.0007C2.68611 12.0007 1.79956 11.1142 1.79956 10.0007C1.79956 8.88728 2.68611 8.00073 3.79956 8.00073ZM15.7996 14.0007C16.913 14.0007 17.7996 14.8873 17.7996 16.0007C17.7996 17.1142 16.913 18.0007 15.7996 18.0007C14.6861 18.0007 13.7996 17.1142 13.7996 16.0007C13.7996 14.8873 14.6861 14.0007 15.7996 14.0007Z"
+                                fill="black" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href=""><span class="view-more-text">View more</span><span class="view-more-arrow">&#8595;</span></a>
             </div>
         </div>
-        <div class="secondary-article">
-            <div class="secondary-article-container">
-                <div class="secondary-article-content">
-                    <h2 class="secondary-article-content-header">चक्रपथ विस्तारको काम अघि बढाउन संयुक्तरूपमा निरीक्षण
-                    </h2>
-                    <p class="secondary-article-content-p">एकभन्दा बढीबाट ऋण लिन नपाइने, यसअघि बढी संस्थाबाट लिएको
-                        ऋणसमेत ...</p>
-                </div>
-                <figure class="secondary-article-image">
-                    <img src="../images/5.png" alt="">
-                </figure>
-            </div>
-            <div class="kantipur-share">
-                <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
-                <div class="kantipur-share-buttons">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.89 5.88H5.11C4.28599 5.88264 3.49648 6.21115 2.91381 6.79382C2.33114 7.37648 2.00264 8.16599 2 8.99V20.35C2 21.8 3.04 22.42 4.31 21.71L8.24 19.52C8.66 19.29 9.34 19.29 9.75 19.52L13.68 21.71C14.95 22.42 15.99 21.8 15.99 20.35V8.99C15.9907 8.58225 15.911 8.17836 15.7556 7.80139C15.6001 7.42442 15.372 7.08176 15.0841 6.79297C14.7962 6.50418 14.4543 6.27492 14.0779 6.11827C13.7014 5.96162 13.2978 5.88066 12.89 5.88Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M22 5.11V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.99C16 7.28 14.6 5.88 12.89 5.88H8V5.11C8 3.4 9.4 2 11.11 2H18.89C20.6 2 22 3.4 22 5.11Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.7996 0.500732C13.8754 0.500732 12.2996 2.07662 12.2996 4.00073C12.2996 4.29362 12.3988 4.55546 12.4675 4.82788L6.47241 7.8269C5.82912 7.0377 4.89031 6.50073 3.79956 6.50073C1.87545 6.50073 0.299561 8.07662 0.299561 10.0007C0.299561 11.9248 1.87545 13.5007 3.79956 13.5007C4.89031 13.5007 5.82912 12.9638 6.47241 12.1746L12.4675 15.1736C12.3988 15.446 12.2996 15.7078 12.2996 16.0007C12.2996 17.9248 13.8754 19.5007 15.7996 19.5007C17.7237 19.5007 19.2996 17.9248 19.2996 16.0007C19.2996 14.0766 17.7237 12.5007 15.7996 12.5007C14.7088 12.5007 13.77 13.0377 13.1267 13.8269L7.13159 10.8279C7.20029 10.5555 7.29956 10.2936 7.29956 10.0007C7.29956 9.70785 7.20029 9.446 7.13159 9.17358L13.1267 6.17456C13.77 6.96376 14.7088 7.50073 15.7996 7.50073C17.7237 7.50073 19.2996 5.92484 19.2996 4.00073C19.2996 2.07662 17.7237 0.500732 15.7996 0.500732ZM15.7996 2.00073C16.913 2.00073 17.7996 2.88728 17.7996 4.00073C17.7996 5.11419 16.913 6.00073 15.7996 6.00073C14.6861 6.00073 13.7996 5.11419 13.7996 4.00073C13.7996 2.88728 14.6861 2.00073 15.7996 2.00073ZM3.79956 8.00073C4.91301 8.00073 5.79956 8.88728 5.79956 10.0007C5.79956 11.1142 4.91301 12.0007 3.79956 12.0007C2.68611 12.0007 1.79956 11.1142 1.79956 10.0007C1.79956 8.88728 2.68611 8.00073 3.79956 8.00073ZM15.7996 14.0007C16.913 14.0007 17.7996 14.8873 17.7996 16.0007C17.7996 17.1142 16.913 18.0007 15.7996 18.0007C14.6861 18.0007 13.7996 17.1142 13.7996 16.0007C13.7996 14.8873 14.6861 14.0007 15.7996 14.0007Z"
-                            fill="black" />
-                    </svg>
+        <div class="navigation-bottom">
+            <a href="../index.html" class="navigation-bottom-link">
+                <div class="navigation-bottom-item">
+                    <figure class="navigation-bottom-item-image">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4592_2392)">
+                                <path
+                                    d="M3.34375 16.9967L4.74259 18.2002L4.8092 18.2562L19.0298 18.2189H19.0334L20.4989 16.9807L3.34375 16.9993V16.9967ZM4.78219 18.1497L3.43017 17.0632H20.3404L18.9902 18.1497H4.78219Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M4.81458 18.2881V18.9618H18.9614V18.2881H4.81458ZM18.911 18.8873H4.86138V18.3574H18.911V18.8873Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M18.1045 15.082V16.432H20.5007V15.082H18.1045ZM20.4467 16.4027H18.1549V15.0846H20.4467V16.4027Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M11.8862 0L11.1859 2.96369H12.5866L11.888 0H11.8862ZM11.897 1.34471C11.897 1.34471 11.9096 1.34471 11.915 1.35004C12.0213 1.75478 12.1257 2.16752 12.2409 2.58291H11.9096L11.8988 1.34471H11.897Z"
+                                    fill="#204A8E" />
+                                <path d="M6.05872 8.4198L7.99225 10.3743H15.7804L17.7139 8.4198H6.05872Z"
+                                    fill="#204A8E" />
+                                <path d="M5.69142 14.9062H0.996216V15.0846H5.69142V14.9062Z" fill="#204A8E" />
+                                <path d="M22.7728 14.9062H18.0848V15.0846H22.7728V14.9062Z" fill="#204A8E" />
+                                <path
+                                    d="M16.0712 10.9947L16.0083 10.9628H7.76429L7.69759 10.9974L0.274902 14.8638H23.492L16.0693 10.9947H16.0712ZM7.94533 11.4341C8.34172 11.4341 8.73811 11.4288 9.13449 11.4288C11.4518 11.4447 13.7653 11.458 16.0789 11.498C16.298 11.498 16.521 11.6657 16.7325 11.7829C17.754 12.3448 18.7754 12.9066 19.7931 13.4685C19.7931 13.4685 19.7969 13.4685 19.7988 13.4685C20.3266 13.764 20.8526 14.0516 21.3748 14.3498L7.86911 11.4341H7.94724H7.94533Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M13.5328 4.0556H10.2397L4.99146 7.83411H18.7868L13.5328 4.0556ZM16.9078 7.0832L16.8887 7.07521L16.8716 7.06989L10.3808 4.62012C10.5123 4.58816 10.6457 4.57219 10.781 4.57219C11.6633 4.6068 12.5437 4.58284 13.4242 4.59349C13.5175 4.59881 13.6109 4.63343 13.6948 4.69201C14.5371 5.29913 15.3718 5.90625 16.2084 6.52401C16.4771 6.7184 16.742 6.91545 17.0107 7.12048C17.0107 7.12048 17.0126 7.12048 17.0145 7.12048L16.9078 7.08054V7.0832Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M19.3852 19.449H4.38549L-6.22925 25.0143H30L19.3833 19.449H19.3852ZM6.27403 20.128C10.5828 20.1201 14.8935 20.1174 19.2042 20.1201C19.2595 20.1201 19.3147 20.1334 19.3662 20.16C19.532 20.2372 19.7035 20.3251 19.8731 20.4156C20.9384 20.9562 22.0018 21.4967 23.067 22.0373C24.0771 22.5512 25.0871 23.0545 26.0971 23.5657C26.5202 23.7761 27.2481 24.1435 27.6426 24.3433H26.6059L6.27403 20.1254V20.128Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M7.93103 10.2862V11.0478H15.8398V10.2862H7.93103ZM15.7228 10.872H8.05165V10.4646H15.7228V10.872Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M10.3218 2.99844L10.7016 3.55763H13.0762L13.4471 3.00909L13.3625 2.88128L13.024 3.38188H10.7538L10.4082 2.87329L10.3218 2.99844Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M2.96045 16.882L4.74275 18.3226L4.78596 18.3572H18.9868L19.0336 18.32L20.8105 16.882H2.96045ZM18.9544 18.1762H4.81837L4.78236 18.1469L3.43033 17.0605H20.3406L18.9904 18.1469L18.9544 18.1762Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M4.74268 18.1471V19.0658H19.0335V18.1471H4.74268ZM18.9129 18.8874H4.8633V18.3282H18.9129V18.8874Z"
+                                    fill="#204A8E" />
+                                <path d="M8.70513 14.9862H5.99927V16.4933H8.70513V14.9862Z" fill="#204A8E" />
+                                <path d="M11.726 14.9862H9.02014V16.4933H11.726V14.9862Z" fill="#204A8E" />
+                                <path d="M14.7487 14.9862H12.0428V16.4933H14.7487V14.9862Z" fill="#204A8E" />
+                                <path d="M17.7696 14.9862H15.0656V16.4933H17.7696V14.9862Z" fill="#204A8E" />
+                                <path
+                                    d="M18.0361 14.8985V16.5788H20.5692V14.8985H18.0361ZM20.4485 16.4003H18.1568V15.0743H20.4485V16.4003Z"
+                                    fill="#204A8E" />
+                                <path
+                                    d="M3.20154 14.8985V16.5788H5.73637V14.8985H3.20154ZM5.61755 16.4003H3.32036V15.0743H5.61755V16.4003Z"
+                                    fill="#204A8E" />
+                                <path d="M2.98906 14.9862H2.87024V16.6638H2.98906V14.9862Z" fill="#204A8E" />
+                                <path d="M20.9075 14.9862H20.7887V16.6638H20.9075V14.9862Z" fill="#204A8E" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4592_2392">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
+                    </figure>
+                    <div class="navigation-bottom-item-text">
+                        Home
+                    </div>
                 </div>
-            </div>
+            </a>
+            <a href="./latest.html" class="navigation-bottom-link">
+                <div class="navigation-bottom-item">
+                    <figure class="navigation-bottom-item-image">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 8V13M20.75 13.25C20.75 18.08 16.83 22 12 22C7.17 22 3.25 18.08 3.25 13.25C3.25 8.42 7.17 4.5 12 4.5C16.83 4.5 20.75 8.42 20.75 13.25Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 2H15" stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </figure>
+                    <div class="navigation-bottom-item-text">
+                        Latest
+                    </div>
+                </div>
+            </a>
+            <a href="" class="navigation-bottom-link">
+                <div class="navigation-bottom-item">
+                    <figure class="navigation-bottom-item-image">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 5H2M5 19H2M3 12H2M15.39 5.21L16.8 8.03C16.99 8.42 17.5 8.79 17.93 8.87L20.48 9.29C22.11 9.56 22.49 10.74 21.32 11.92L19.33 13.91C19 14.24 18.81 14.89 18.92 15.36L19.49 17.82C19.94 19.76 18.9 20.52 17.19 19.5L14.8 18.08C14.37 17.82 13.65 17.82 13.22 18.08L10.83 19.5C9.12 20.51 8.08 19.76 8.53 17.82L9.1 15.36C9.21 14.9 9.02 14.25 8.69 13.91L6.7 11.92C5.53 10.75 5.91 9.57 7.54 9.29L10.09 8.87C10.52 8.8 11.03 8.42 11.22 8.03L12.63 5.21C13.38 3.68 14.62 3.68 15.39 5.21Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </figure>
+                    <div class="navigation-bottom-item-text">
+                        for you
+                    </div>
+                </div>
+            </a>
+            <a href="" class="navigation-bottom-link">
+                <div class="navigation-bottom-item">
+                    <figure class="navigation-bottom-item-image">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9.09998 12V10.52C9.09998 8.60999 10.45 7.83999 12.1 8.78999L13.38 9.52999L14.66 10.27C16.31 11.22 16.31 12.78 14.66 13.73L13.38 14.47L12.1 15.21C10.45 16.16 9.09998 15.38 9.09998 13.48V12Z"
+                                stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </figure>
+                    <div class="navigation-bottom-item-text">
+                        Videos
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="navigation-bottom-link">
+                <div class="navigation-bottom-item">
+                    <figure class="navigation-bottom-item-image">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 12L22 9.00001C22 4.00001 20 2.00001 15 2.00001L9 2.00001C4 2.00001 2 4.00001 2 9.00001L2 15C2 18.12 2.78 20.08 4.59 21.1C5.1 21.39 6.12 21.61 7.05 21.76M11 11L6 11M13 7.00001L6 7.00001"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M21 22L19.7143 20.7143M16.1143 21.2286C17.2055 21.2286 18.2519 20.7951 19.0235 20.0235C19.7951 19.2519 20.2286 18.2055 20.2286 17.1143C20.2286 16.0231 19.7951 14.9766 19.0235 14.205C18.2519 13.4335 17.2055 13 16.1143 13C15.0231 13 13.9766 13.4335 13.205 14.205C12.4335 14.9766 12 16.0231 12 17.1143C12 18.2055 12.4335 19.2519 13.205 20.0235C13.9766 20.7951 15.0231 21.2286 16.1143 21.2286Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </figure>
+                    <div class="navigation-bottom-item-text">
+                        Menu
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="secondary-article">
-            <div class="secondary-article-container">
-                <div class="secondary-article-content">
-                    <h2 class="secondary-article-content-header">गुन्द्रुकको ब्रान्ड बनाइँदै</h2>
-                    <p class="secondary-article-content-p">साग अमिल्याएर बनाइने तरकारीजन्य परिकार हो गुन्द्रुक । विदेशमा
-                        समेत ‘विशेष ...</p>
-                </div>
-                <figure class="secondary-article-image">
-                    <img src="../images/6.png" alt="">
-                </figure>
-            </div>
-            <div class="kantipur-share">
-                <p class="kantipur-share-p">कान्तिपुर संवाददाता</p>
-                <div class="kantipur-share-buttons">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.89 5.88H5.11C4.28599 5.88264 3.49648 6.21115 2.91381 6.79382C2.33114 7.37648 2.00264 8.16599 2 8.99V20.35C2 21.8 3.04 22.42 4.31 21.71L8.24 19.52C8.66 19.29 9.34 19.29 9.75 19.52L13.68 21.71C14.95 22.42 15.99 21.8 15.99 20.35V8.99C15.9907 8.58225 15.911 8.17836 15.7556 7.80139C15.6001 7.42442 15.372 7.08176 15.0841 6.79297C14.7962 6.50418 14.4543 6.27492 14.0779 6.11827C13.7014 5.96162 13.2978 5.88066 12.89 5.88Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M22 5.11V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.99C16 7.28 14.6 5.88 12.89 5.88H8V5.11C8 3.4 9.4 2 11.11 2H18.89C20.6 2 22 3.4 22 5.11Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.7996 0.500732C13.8754 0.500732 12.2996 2.07662 12.2996 4.00073C12.2996 4.29362 12.3988 4.55546 12.4675 4.82788L6.47241 7.8269C5.82912 7.0377 4.89031 6.50073 3.79956 6.50073C1.87545 6.50073 0.299561 8.07662 0.299561 10.0007C0.299561 11.9248 1.87545 13.5007 3.79956 13.5007C4.89031 13.5007 5.82912 12.9638 6.47241 12.1746L12.4675 15.1736C12.3988 15.446 12.2996 15.7078 12.2996 16.0007C12.2996 17.9248 13.8754 19.5007 15.7996 19.5007C17.7237 19.5007 19.2996 17.9248 19.2996 16.0007C19.2996 14.0766 17.7237 12.5007 15.7996 12.5007C14.7088 12.5007 13.77 13.0377 13.1267 13.8269L7.13159 10.8279C7.20029 10.5555 7.29956 10.2936 7.29956 10.0007C7.29956 9.70785 7.20029 9.446 7.13159 9.17358L13.1267 6.17456C13.77 6.96376 14.7088 7.50073 15.7996 7.50073C17.7237 7.50073 19.2996 5.92484 19.2996 4.00073C19.2996 2.07662 17.7237 0.500732 15.7996 0.500732ZM15.7996 2.00073C16.913 2.00073 17.7996 2.88728 17.7996 4.00073C17.7996 5.11419 16.913 6.00073 15.7996 6.00073C14.6861 6.00073 13.7996 5.11419 13.7996 4.00073C13.7996 2.88728 14.6861 2.00073 15.7996 2.00073ZM3.79956 8.00073C4.91301 8.00073 5.79956 8.88728 5.79956 10.0007C5.79956 11.1142 4.91301 12.0007 3.79956 12.0007C2.68611 12.0007 1.79956 11.1142 1.79956 10.0007C1.79956 8.88728 2.68611 8.00073 3.79956 8.00073ZM15.7996 14.0007C16.913 14.0007 17.7996 14.8873 17.7996 16.0007C17.7996 17.1142 16.913 18.0007 15.7996 18.0007C14.6861 18.0007 13.7996 17.1142 13.7996 16.0007C13.7996 14.8873 14.6861 14.0007 15.7996 14.0007Z"
-                            fill="black" />
-                    </svg>
-
-                </div>
-            </div>
-        </div>
-        <div class="view-more">
-            <a href=""><span class="view-more-text">View more</span><span class="view-more-arrow">&#8595;</span></a>
-        </div>
-    </div>
-                <div class="navigation-bottom">
-        <a href="" class="navigation-bottom-link">
-            <div class="navigation-bottom-item">
-                <figure class="navigation-bottom-item-image">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_4592_2392)">
-                            <path
-                                d="M3.34375 16.9967L4.74259 18.2002L4.8092 18.2562L19.0298 18.2189H19.0334L20.4989 16.9807L3.34375 16.9993V16.9967ZM4.78219 18.1497L3.43017 17.0632H20.3404L18.9902 18.1497H4.78219Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M4.81458 18.2881V18.9618H18.9614V18.2881H4.81458ZM18.911 18.8873H4.86138V18.3574H18.911V18.8873Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M18.1045 15.082V16.432H20.5007V15.082H18.1045ZM20.4467 16.4027H18.1549V15.0846H20.4467V16.4027Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M11.8862 0L11.1859 2.96369H12.5866L11.888 0H11.8862ZM11.897 1.34471C11.897 1.34471 11.9096 1.34471 11.915 1.35004C12.0213 1.75478 12.1257 2.16752 12.2409 2.58291H11.9096L11.8988 1.34471H11.897Z"
-                                fill="#204A8E" />
-                            <path d="M6.05872 8.4198L7.99225 10.3743H15.7804L17.7139 8.4198H6.05872Z" fill="#204A8E" />
-                            <path d="M5.69142 14.9062H0.996216V15.0846H5.69142V14.9062Z" fill="#204A8E" />
-                            <path d="M22.7728 14.9062H18.0848V15.0846H22.7728V14.9062Z" fill="#204A8E" />
-                            <path
-                                d="M16.0712 10.9947L16.0083 10.9628H7.76429L7.69759 10.9974L0.274902 14.8638H23.492L16.0693 10.9947H16.0712ZM7.94533 11.4341C8.34172 11.4341 8.73811 11.4288 9.13449 11.4288C11.4518 11.4447 13.7653 11.458 16.0789 11.498C16.298 11.498 16.521 11.6657 16.7325 11.7829C17.754 12.3448 18.7754 12.9066 19.7931 13.4685C19.7931 13.4685 19.7969 13.4685 19.7988 13.4685C20.3266 13.764 20.8526 14.0516 21.3748 14.3498L7.86911 11.4341H7.94724H7.94533Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M13.5328 4.0556H10.2397L4.99146 7.83411H18.7868L13.5328 4.0556ZM16.9078 7.0832L16.8887 7.07521L16.8716 7.06989L10.3808 4.62012C10.5123 4.58816 10.6457 4.57219 10.781 4.57219C11.6633 4.6068 12.5437 4.58284 13.4242 4.59349C13.5175 4.59881 13.6109 4.63343 13.6948 4.69201C14.5371 5.29913 15.3718 5.90625 16.2084 6.52401C16.4771 6.7184 16.742 6.91545 17.0107 7.12048C17.0107 7.12048 17.0126 7.12048 17.0145 7.12048L16.9078 7.08054V7.0832Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M19.3852 19.449H4.38549L-6.22925 25.0143H30L19.3833 19.449H19.3852ZM6.27403 20.128C10.5828 20.1201 14.8935 20.1174 19.2042 20.1201C19.2595 20.1201 19.3147 20.1334 19.3662 20.16C19.532 20.2372 19.7035 20.3251 19.8731 20.4156C20.9384 20.9562 22.0018 21.4967 23.067 22.0373C24.0771 22.5512 25.0871 23.0545 26.0971 23.5657C26.5202 23.7761 27.2481 24.1435 27.6426 24.3433H26.6059L6.27403 20.1254V20.128Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M7.93103 10.2862V11.0478H15.8398V10.2862H7.93103ZM15.7228 10.872H8.05165V10.4646H15.7228V10.872Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M10.3218 2.99844L10.7016 3.55763H13.0762L13.4471 3.00909L13.3625 2.88128L13.024 3.38188H10.7538L10.4082 2.87329L10.3218 2.99844Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M2.96045 16.882L4.74275 18.3226L4.78596 18.3572H18.9868L19.0336 18.32L20.8105 16.882H2.96045ZM18.9544 18.1762H4.81837L4.78236 18.1469L3.43033 17.0605H20.3406L18.9904 18.1469L18.9544 18.1762Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M4.74268 18.1471V19.0658H19.0335V18.1471H4.74268ZM18.9129 18.8874H4.8633V18.3282H18.9129V18.8874Z"
-                                fill="#204A8E" />
-                            <path d="M8.70513 14.9862H5.99927V16.4933H8.70513V14.9862Z" fill="#204A8E" />
-                            <path d="M11.726 14.9862H9.02014V16.4933H11.726V14.9862Z" fill="#204A8E" />
-                            <path d="M14.7487 14.9862H12.0428V16.4933H14.7487V14.9862Z" fill="#204A8E" />
-                            <path d="M17.7696 14.9862H15.0656V16.4933H17.7696V14.9862Z" fill="#204A8E" />
-                            <path
-                                d="M18.0361 14.8985V16.5788H20.5692V14.8985H18.0361ZM20.4485 16.4003H18.1568V15.0743H20.4485V16.4003Z"
-                                fill="#204A8E" />
-                            <path
-                                d="M3.20154 14.8985V16.5788H5.73637V14.8985H3.20154ZM5.61755 16.4003H3.32036V15.0743H5.61755V16.4003Z"
-                                fill="#204A8E" />
-                            <path d="M2.98906 14.9862H2.87024V16.6638H2.98906V14.9862Z" fill="#204A8E" />
-                            <path d="M20.9075 14.9862H20.7887V16.6638H20.9075V14.9862Z" fill="#204A8E" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_4592_2392">
-                                <rect width="24" height="24" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-
-                </figure>
-                <div class="navigation-bottom-item-text">
-                    Home
-                </div>
-            </div>
-        </a>
-        <a href="" class="navigation-bottom-link">
-            <div class="navigation-bottom-item">
-                <figure class="navigation-bottom-item-image">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 8V13M20.75 13.25C20.75 18.08 16.83 22 12 22C7.17 22 3.25 18.08 3.25 13.25C3.25 8.42 7.17 4.5 12 4.5C16.83 4.5 20.75 8.42 20.75 13.25Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M9 2H15" stroke="black" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                </figure>
-                <div class="navigation-bottom-item-text">
-                    Latest
-                </div>
-            </div>
-        </a>
-        <a href="" class="navigation-bottom-link">
-            <div class="navigation-bottom-item">
-                <figure class="navigation-bottom-item-image">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8 5H2M5 19H2M3 12H2M15.39 5.21L16.8 8.03C16.99 8.42 17.5 8.79 17.93 8.87L20.48 9.29C22.11 9.56 22.49 10.74 21.32 11.92L19.33 13.91C19 14.24 18.81 14.89 18.92 15.36L19.49 17.82C19.94 19.76 18.9 20.52 17.19 19.5L14.8 18.08C14.37 17.82 13.65 17.82 13.22 18.08L10.83 19.5C9.12 20.51 8.08 19.76 8.53 17.82L9.1 15.36C9.21 14.9 9.02 14.25 8.69 13.91L6.7 11.92C5.53 10.75 5.91 9.57 7.54 9.29L10.09 8.87C10.52 8.8 11.03 8.42 11.22 8.03L12.63 5.21C13.38 3.68 14.62 3.68 15.39 5.21Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                </figure>
-                <div class="navigation-bottom-item-text">
-                    for you
-                </div>
-            </div>
-        </a>
-        <a href="" class="navigation-bottom-link">
-            <div class="navigation-bottom-item">
-                <figure class="navigation-bottom-item-image">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M9.09998 12V10.52C9.09998 8.60999 10.45 7.83999 12.1 8.78999L13.38 9.52999L14.66 10.27C16.31 11.22 16.31 12.78 14.66 13.73L13.38 14.47L12.1 15.21C10.45 16.16 9.09998 15.38 9.09998 13.48V12Z"
-                            stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </figure>
-                <div class="navigation-bottom-item-text">
-                    Videos
-                </div>
-            </div>
-        </a>
-        <a href="#" class="navigation-bottom-link">
-            <div class="navigation-bottom-item">
-                <figure class="navigation-bottom-item-image">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M22 12L22 9.00001C22 4.00001 20 2.00001 15 2.00001L9 2.00001C4 2.00001 2 4.00001 2 9.00001L2 15C2 18.12 2.78 20.08 4.59 21.1C5.1 21.39 6.12 21.61 7.05 21.76M11 11L6 11M13 7.00001L6 7.00001"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M21 22L19.7143 20.7143M16.1143 21.2286C17.2055 21.2286 18.2519 20.7951 19.0235 20.0235C19.7951 19.2519 20.2286 18.2055 20.2286 17.1143C20.2286 16.0231 19.7951 14.9766 19.0235 14.205C18.2519 13.4335 17.2055 13 16.1143 13C15.0231 13 13.9766 13.4335 13.205 14.205C12.4335 14.9766 12 16.0231 12 17.1143C12 18.2055 12.4335 19.2519 13.205 20.0235C13.9766 20.7951 15.0231 21.2286 16.1143 21.2286Z"
-                            stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                </figure>
-                <div class="navigation-bottom-item-text">
-                    Menu
-                </div>
-            </div>
-        </a>
-    </div>
     </div>
     <script src="../js/index.js"></script>
 </body>
+
 </html>

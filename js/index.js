@@ -35,8 +35,7 @@ function menuFunction() {
 
     }
 }
-
-menu.addEventListener("click", menuFunction);
+menu.addEventListener('click', menuFunction);
 
 //menu darkmode js//
 

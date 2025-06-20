@@ -1,0 +1,101 @@
+@use './config' as *;
+
+.comments-header {
+    @include flex-direction(row, 20px);
+    padding: 27px 0px 21px 16px;
+    align-items: center;
+    border-bottom: 1px solid $divider-color;
+
+    &-header {
+        color: $text-secondary-color;
+        font-size: 24px;
+        font-weight: $medium;
+    }
+}
+
+.comment-top-container {
+    background-color: rgba(50, 108, 172, 0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+    @include flex-space-between(row);
+    align-items: center;
+
+    .comments {
+        color: $secondary-color;
+
+        &-number {
+            font-weight: $medium;
+        }
+    }
+
+    .comment-btn {
+        width: 87px;
+        height: 32px;
+        @include button-hollow;
+        padding-left: 4px;
+    }
+}
+
+.comment-container{
+    width: 100%;
+}
+.comment {
+    padding: 16px;
+    @include flex-direction(row, 16px);
+    &-image {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center
+        }
+    }
+
+    &-content {
+        @include flex-direction(column, 4px);
+
+        &-top {
+            @include flex-direction(row, 6px);
+        }
+    }
+
+    &-name {
+        font-size: 16px;
+        font-weight: $medium;
+
+    }
+
+    &-p {
+        font-size: 14px;
+        color: #2A2A2A;
+    }
+
+    .comment-time {
+        font-size: 14px;
+        color: #888888;
+    }
+}
+.comment-bottom{
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F5F8FB;
+    gap: 16px;
+    padding: 12px 16px;
+    input{
+      padding: 12px 16px;
+      width: 93%; 
+      border: none;
+    }
+    form{
+        width: 93%;
+    }
+}

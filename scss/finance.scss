@@ -1,10 +1,12 @@
 @use './config' as *;
 @use "./config" as *;
+
 body {
     background-color: $background-light;
     color: $text-light;
     font-family: $font-family-english;
 }
+
 .kantipur-header {
 
     @include flex-space-between(row);
@@ -35,6 +37,7 @@ i {
     background: black;
     position: relative;
     transition: all 0.3s;
+
     &::before,
     &::after {
         content: '';
@@ -64,6 +67,7 @@ i {
     background: transparent;
     transition: all 0.3s;
     position: relative;
+
     &::before,
     &::after {
         content: '';
@@ -128,7 +132,8 @@ i {
         align-items: center;
         padding: 21px 16px;
         border-bottom: 1px solid $secondary-color;
-        .dark-mode-text{
+
+        .dark-mode-text {
             font-size: 18px;
             font-family: $font-family-english;
         }
@@ -136,6 +141,7 @@ i {
 
     .menu {
         width: 100%;
+
         &-header {
             font-family: $font-family-english;
             color: $secondary-color;
@@ -143,26 +149,31 @@ i {
             font-weight: $medium;
             padding: 20px 16px;
         }
-        &-ul{
+
+        &-ul {
             list-style-type: none;
             padding: 0px 16px;
         }
-        &-item{
+
+        &-item {
             padding: 16px 0px;
         }
-        a{
+
+        a {
             font-family: $font-family-nepali;
             color: $text-light;
             text-decoration: none;
             font-size: 20px;
             font-weight: $medium;
         }
-        &-footer{
-            @include flex-direction(column,16px);
+
+        &-footer {
+            @include flex-direction(column, 16px);
             padding: 16px;
             align-items: center;
             background-color: #DDDDDD;
-            p{
+
+            p {
                 color: $secondary-color;
                 font-size: 14px;
             }
@@ -171,7 +182,7 @@ i {
 }
 
 
-.hidden-menu{
+.hidden-menu {
     display: none;
 }
 
@@ -288,6 +299,11 @@ i {
     &-content {
         @include flex-direction(column, 8px);
         padding-right: 17px;
+
+        a {
+            color: $text-light;
+            text-decoration: none;
+        }
     }
 
 }
@@ -319,12 +335,15 @@ i {
         text-decoration: none;
     }
 }
+
 .header {
     @include header;
 }
+
 .main-content {
     padding: 0px 16px;
 }
+
 .artha-container {
     padding-top: 8px;
 
@@ -344,6 +363,7 @@ i {
     height: 32px;
     @include button-hollow;
 }
+
 .navigation-bottom {
     @include flex-space-between(row);
     padding: 10px 30px;
@@ -367,7 +387,8 @@ i {
         color: black;
         text-decoration: none;
     }
-    &-item-text{
+
+    &-item-text {
         font-size: 10px;
     }
 }

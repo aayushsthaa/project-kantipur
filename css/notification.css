@@ -49,10 +49,16 @@ body.dark-mode {
   background-color: #181818;
   color: #ffffff;
 }
-body.dark-mode .samachar-container, body.dark-mode .news-radar-top {
+body.dark-mode .samachar-container,
+body.dark-mode .news-radar-top {
   border-color: white;
 }
-body.dark-mode h1, body.dark-mode h2, body.dark-mode p, body.dark-mode a, body.dark-mode p {
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode p,
+body.dark-mode h3 {
   color: #ffffff !important;
 }
 body.dark-mode .menu-hamburger {
@@ -74,12 +80,8 @@ body.dark-mode .sub-category-item-link {
 body.dark-mode .navigation-bottom-link {
   color: black;
 }
-body.dark-mode button {
+body.dark-mode .button-hollow {
   background-color: #F5F8FB !important;
-}
-body.dark-mode .create-account-container {
-  background-color: #181818;
-  color: #ffffff;
 }
 body.dark-mode .dark-mode-container {
   border-color: white;
@@ -96,11 +98,19 @@ body.dark-mode .menu-footer {
 body.dark-mode .unred {
   background-color: #204A8E;
 }
-body.dark-mode .notification-date, body.dark-mode .bichar-date {
-  background-color: #204A8E;
+body.dark-mode .news-radar-bottom,
+body.dark-mode .register-top-container,
+body.dark-mode .login-top-container,
+body.dark-mode .bivid-date,
+body.dark-mode .notification-date,
+body.dark-mode .bichar-date,
+body.dark-mode .create-account-container,
+body.dark-mode .header-container,
+body.dark-mode .comment-container-1, body.dark-mode .comment-bottom, body.dark-mode .comment-top-container {
+  background-color: #204A8E !important;
 }
-body.dark-mode .news-radar-bottom {
-  background-color: #204A8E;
+body.dark-mode .or p {
+  background-color: #181818 !important;
 }
 
 * {
@@ -113,7 +123,16 @@ body.dark-mode .news-radar-bottom {
 }
 
 body {
+  font-family: "Inter";
+}
+
+body {
   background-color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .notification-header {

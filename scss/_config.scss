@@ -2,10 +2,10 @@ $font-family-english: 'Inter';
 $font-family-nepali: 'Mukta';
 $background-light: #FFFF;
 $secondary-color: #204A8E;
-$text-secondary-color:#326CAC;
+$text-secondary-color: #326CAC;
 $third-color: #D9D9D9;
 $secondary-backgorund: #F5F8FB;
-$tertary-background:#E0E9F3;
+$tertary-background: #E0E9F3;
 $text-light: black;
 $background-dark: #181818;
 $text-dark: #ffffff;
@@ -19,162 +19,174 @@ $font-size: 14px;
 
 
 @mixin button-hollow {
-    font-size: 14px;
-    background-color: rgba(50, 108, 172, 0.1);
-    color: $secondary-color;
-    border: 1px solid $secondary-color;
-    cursor: pointer;
+  font-size: 14px;
+  background-color: rgba(50, 108, 172, 0.1);
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  cursor: pointer;
 }
 
 @mixin flex-space-between($direction) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
 }
 
 @mixin flex-direction($direction, $gap) {
-    display: flex;
-    flex-direction: $direction;
-    gap: $gap;
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
 
 }
 
 @mixin header {
-    font-family: $font-family-nepali;
-    font-size: 24px;
-    color: $secondary-color;
-    font-weight: $bold;
-    margin-bottom: 12px;
+  font-family: $font-family-nepali;
+  font-size: 24px;
+  color: $secondary-color;
+  font-weight: $bold;
+  margin-bottom: 12px;
 }
 
 @mixin news-header {
-    font-family: $font-family-nepali;
-    font-size: 22px;
-    font-weight: $medium;
-    line-height: 22px;
+  font-family: $font-family-nepali;
+  font-size: 22px;
+  font-weight: $medium;
+  line-height: 22px;
 }
 
 @mixin news-paragraph {
-    font-family: $font-family-nepali;
-    font-size: 16px;
-    font-weight: $normal;
-    line-height:18px;
+  font-family: $font-family-nepali;
+  font-size: 16px;
+  font-weight: $normal;
+  line-height: 18px;
 }
 
 @mixin secondary-header {
-    font-family: $font-family-nepali;
-    font-size: 18px;
-    font-weight: $medium;
-    line-height: 30px;
+  font-family: $font-family-nepali;
+  font-size: 18px;
+  font-weight: $medium;
+  line-height: 30px;
 }
 
 @mixin secondary-paragaraph {
-    font-family: $font-family-nepali;
-    font-size: 14px;
-    font-weight: $normal;
-    line-height: 24px;
+  font-family: $font-family-nepali;
+  font-size: 14px;
+  font-weight: $normal;
+  line-height: 24px;
 }
 
 @mixin hero-content {
-    padding-bottom: 16px;
-    border-bottom: 1px solid $divider-color;
-    margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $divider-color;
+  margin-bottom: 16px;
 
-    &-image {
-        width: 100%;
+  &-image {
+    width: 100%;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain
-        }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain
+    }
+  }
+
+  &-content {
+    @include flex-direction(column, 8px);
+
+    &-time {
+      @include flex-direction(row, 12px);
     }
 
-    &-content {
-        @include flex-direction(column, 8px);
-
-        &-time {
-            @include flex-direction(row, 12px);
-        }
-
-        &-header {
-            @include news-header;
-            line-height:30px; 
-        }
-
-        &-p {
-            @include news-paragraph;
-            line-height: 24px;
-        }
+    &-header {
+      @include news-header;
+      line-height: 30px;
     }
+
+    &-p {
+      @include news-paragraph;
+      line-height: 24px;
+    }
+  }
 }
 
-body{
-    font-family: $font-family-english;
+body {
+  font-family: $font-family-english;
 }
+
 .cont {
-    text-align: center;
+  text-align: center;
 }
 
 .toggle {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .toggle__input {
-    display: none;
+  display: none;
 }
 
 .toggle__label {
-    display: block;
-    width: 60px;
-    height: 30px;
-    background-color: $toggle-light;
-    border-radius: 99px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: $toggle-light;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .dark-mode .toggle__label {
-    background-color: $toggle-dark;
+  background-color: $toggle-dark;
 }
 
 .toggle__input:checked+.toggle__label::after {
-    left: 32px;
+  left: 32px;
 }
 
 .toggle__label::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 26px;
-    height: 26px;
-    background-color: $divider-color;
-    border-radius: 50%;
-    transition: left 0.3s ease;
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background-color: $divider-color;
+  border-radius: 50%;
+  transition: left 0.3s ease;
 }
 
 
 body.dark-mode {
-    background-color: $background-dark;
-    color: $text-dark;
-    .samachar-container,.news-radar-top{
-            border-color: white;
-    }
-h1,h2,p,a,p{
+  background-color: $background-dark;
+  color: $text-dark;
+
+  .samachar-container,
+  .news-radar-top {
+    border-color: white;
+  }
+
+  h1,
+  h2,
+  p,
+  a,
+  p,
+  h3 {
     color: $text-dark !important;
   }
 
-  .menu-hamburger{
-        background: $text-dark;
+  .menu-hamburger {
+    background: $text-dark;
+
     &::before,
     &::after {
       background: $text-dark;
-    } 
+    }
   }
+
   .hamburger-active {
     background: $text-light;
+
     &::before,
     &::after {
       background: $text-dark;
@@ -187,48 +199,63 @@ h1,h2,p,a,p{
   .sub-category-item-link {
     color: $text-dark;
   }
-  .navigation-bottom-link{
+
+  .navigation-bottom-link {
     color: $text-light;
   }
+
   .button-hollow {
     background-color: $secondary-backgorund !important;
   }
-  .create-account-container{
-    background-color: $background-dark;
-    color: $text-dark;
-  }
-  .dark-mode-container{
+
+  .dark-mode-container {
     border-color: white;
   }
-  .navigation-bottom{
+
+  .navigation-bottom {
     background-color: $secondary-color;
-    a{
-        color: white;
+
+    a {
+      color: white;
     }
   }
-    .menu-footer{
+
+  .menu-footer {
     background-color: black;
   }
-  .unred{
+
+  .unred {
     background-color: $secondary-color;
   }
-  .news-radar-bottom,.register-top-container,.login-top-container,.bivid-date,.notification-date,.bichar-date{
+
+  .news-radar-bottom,
+  .register-top-container,
+  .login-top-container,
+  .bivid-date,
+  .notification-date,
+  .bichar-date,
+  .create-account-container,
+  .header-container,
+  .comment-container-1,.comment-bottom,.comment-top-container {
     background-color: $secondary-color !important;
   }
-  .or{
-    p{
-          background-color: $background-dark !important;
+
+  .or {
+    p {
+      background-color: $background-dark !important;
     }
   }
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
+
 .main-content {
-    padding: 0px 16px;
+  padding: 0px 16px;
 }
-body{
+
+body {
   font-family: $font-family-english;
 }

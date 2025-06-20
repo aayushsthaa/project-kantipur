@@ -85,6 +85,10 @@
     &-content {
         @include flex-direction(column, 8px);
         padding-right: 17px;
+        a{
+            color: $text-light;
+            text-decoration: none; 
+        }
     }
 
 }
