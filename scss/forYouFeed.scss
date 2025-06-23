@@ -1,0 +1,333 @@
+@use './config' as *;
+
+.for-you-feed-top {
+    @include flex-space-between(row);
+    align-items: center;
+    padding: 29px 16px 16px 16px;
+    border-bottom: 1px solid $divider-color;
+
+    h1 {
+        font-weight: $medium;
+        font-size: 24px;
+    }
+
+    .notification-profile-container {
+        @include flex-direction(row, 33px);
+        align-items: center;
+
+        .notification-icon-image {
+            width: 28px;
+            height: 28px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .for-you-profile-image {
+            width: 36px;
+            height: 36px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.for-you-nav {
+    border-bottom: 1px solid $divider-color;
+
+    &-ul {
+        padding: 16px 24px;
+        @include flex-direction(row, 20px);
+    }
+
+    &-item {
+        list-style: none;
+
+        &-link {
+            text-decoration: none;
+            color: $text-light;
+            font-weight: 400;
+            position: relative;
+
+        }
+    }
+
+}
+
+.active {
+    color: $text-secondary-color;
+    font-weight: $medium;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        top: 32px;
+        left: -5px;
+        background-color: $text-secondary-color;
+    }
+}
+
+.following-banner {
+    @include flex-space-between(row);
+    padding: 16px;
+    background-color: $secondary-backgorund;
+    align-items: center;
+
+    p {
+        font-size: 14px;
+        color: $text-secondary-color;
+        font-weight: 400;
+    }
+
+    .following-banner-btn {
+        @include button-hollow;
+        width: 60px;
+        height: 32px;
+    }
+
+}
+
+.news-container {
+    border-bottom: 1px solid $divider-color;
+}
+
+.news-wrapper {
+    @include flex-direction(column, 8px);
+    padding: 20px 16px;
+    border-bottom: 1px solid $divider-color;
+
+    .news-category-wrapper {
+        @include flex-direction(row, 6px);
+
+        .news-category-name {
+            font-family: $font-family-nepali;
+            font-weight: $medium;
+            color: $text-secondary-color;
+            font-size: 14px;
+        }
+
+        .news-category-time {
+            font-family: $font-family-nepali;
+            font-size: 14px;
+            color: $toggle-light;
+        }
+    }
+
+    .news-author-wrapper {
+        @include flex-space-between(row);
+
+        .news-author {
+            @include flex-direction(row, 10px);
+            padding-bottom: 16px;
+            align-items: center;
+
+            &-image {
+                width: 32px;
+                height: 32px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 50%;
+                }
+            }
+
+            &-name {
+                color: $text-secondary-color;
+                font-family: $font-family-nepali;
+                font-size: 18px;
+
+            }
+        }
+
+        .see-all {
+            @include flex-direction(row, 8px);
+            color: $text-secondary-color;
+            font-weight: $medium;
+        }
+    }
+}
+
+.news-content-wrapper {
+    @include flex-direction(row, 16px);
+    border-bottom: 9px;
+
+    a {
+        color: $text-light;
+        text-decoration: none;
+    }
+
+    .news-content {
+        @include flex-direction(column, 8px);
+
+        &-header {
+            font-weight: $medium;
+            font-family: $font-family-nepali;
+            font-size: 18px;
+            line-height: 24px;
+
+        }
+
+        &-p {
+            font-family: $font-family-nepali;
+            font-size: 14px;
+
+        }
+
+        &-image {
+            width: 117px;
+            height: 87px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+
+.kantipur-share {
+    @include flex-space-between(row);
+    padding-right: 13px;
+
+    &-p {
+        font-family: $font-family-nepali;
+        color: $toggle-light;
+        font-size: 14px;
+    }
+
+    &-buttons {
+        @include flex-direction(row, 30px);
+    }
+}
+
+.news-container-banner-bottom {
+    padding: 16px;
+    margin-bottom: 16px;
+    @include flex-space-between(row);
+    background-color: $secondary-backgorund;
+
+    p {
+        color: $text-secondary-color;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &-btn {
+        @include button-hollow;
+        width: 78px;
+        height: 32px;
+    }
+}
+
+.explore {
+    &-header-wrapper {
+        @include flex-direction(column, 8px);
+        margin-bottom: 12px;
+        padding: 16px;
+    }
+
+    &-header {
+        color: $text-secondary-color;
+        font-weight: $medium;
+        font-size: 24px;
+    }
+
+    p {
+        color: $toggle-light;
+        font-family: $font-family-nepali;
+
+    }
+
+    &-wrapper {
+        @include flex-space-between(row);
+        align-items: center;
+        padding: 20px 16px;
+        position: relative;
+        border-bottom: 1px solid $divider-color;
+    }
+
+    &-name {
+        font-weight: $bold;
+        font-family: $font-family-nepali;
+        font-size: 24px;
+
+    }
+
+    &-btn {
+        @include button-hollow;
+        width: 117px;
+        height: 32px;
+    }
+}
+.view-more {
+    text-align: center;
+    padding: 16px;
+    font-weight: $medium;
+    margin-bottom: 16px;
+
+    a {
+        color: $secondary-color;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    &-text {
+        text-decoration: underline;
+        margin-right: 12px;
+    }
+
+    &-arrow {
+        text-decoration: none;
+    }
+}
+
+
+.navigation-bottom {
+    @include flex-space-between(row);
+    padding: 10px 30px;
+    position: sticky;
+    bottom: 0px;
+    background-color: white;
+    z-index: 100;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+
+    &-item {
+        @include flex-direction(column, 3px);
+        align-items: center;
+
+        &-image {
+            font-size: 10px;
+        }
+
+    }
+
+    &-link {
+        color: black;
+        text-decoration: none;
+    }
+
+    &-item-text {
+        font-size: 10px;
+    }
+}
+
+
+.hidden-nav-bottom {
+    transform: translateY(100%);
+}
