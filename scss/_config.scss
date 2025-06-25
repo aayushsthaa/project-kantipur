@@ -13,7 +13,7 @@ $toggle-light: #888888;
 $toggle-dark: #204A8E;
 $divider-color: #DDDDDD;
 $bold: 800;
-$normal: 400;
+$normal: 500;
 $medium: 600;
 $font-size: 14px;
 
@@ -258,4 +258,5 @@ body.dark-mode {
 
 body {
   font-family: $font-family-english;
+  height: 100vh;
 }

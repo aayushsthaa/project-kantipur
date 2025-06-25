@@ -124,6 +124,7 @@ body.dark-mode .or p {
 
 body {
   font-family: "Inter";
+  height: 100vh;
 }
 
 body {
@@ -318,7 +319,7 @@ i {
 }
 .news-radar-top-header {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   color: #204A8E;
 }
 .news-radar-top-header-radar {
@@ -381,7 +382,7 @@ i {
 .article-content-p {
   font-family: "Mukta";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 18px;
 }
 
@@ -434,7 +435,7 @@ i {
 .samachar-hero-content-p {
   font-family: "Mukta";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 18px;
   line-height: 24px;
 }
@@ -530,7 +531,7 @@ i {
 .secondary-article-content-p {
   font-family: "Mukta";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
 }
 
@@ -592,7 +593,7 @@ i {
 .artha-hero-content-p {
   font-family: "Mukta";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 18px;
   line-height: 24px;
 }

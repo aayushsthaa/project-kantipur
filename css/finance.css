@@ -124,6 +124,7 @@ body.dark-mode .or p {
 
 body {
   font-family: "Inter";
+  height: 100vh;
 }
 
 body {
@@ -425,7 +426,7 @@ i {
 .secondary-article-content-p {
   font-family: "Mukta";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
 }
 
@@ -498,7 +499,7 @@ i {
 .artha-hero-content-p {
   font-family: "Mukta";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 18px;
   line-height: 24px;
 }

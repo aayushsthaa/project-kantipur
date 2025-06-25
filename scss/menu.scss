@@ -1,0 +1,184 @@
+@use './config' as *;
+
+.menu-top {
+    @include flex-space-between(row);
+    align-items: center;
+    padding: 29px 16px 16px 16px;
+    border-bottom: 1px solid $divider-color;
+
+    h1 {
+        font-weight: $medium;
+        font-size: 24px;
+    }
+
+    .notification-profile-container {
+        @include flex-direction(row, 33px);
+        align-items: center;
+
+        .notification-icon-image {
+            width: 28px;
+            height: 28px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .for-you-profile-image {
+            width: 36px;
+            height: 36px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.menu-top-banner-container {
+    background-color: $secondary-backgorund;
+}
+
+.menu-top-banner-wrapper {
+    background-image: url(../images/24.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 18px 16px;
+    color: $text-secondary-color;
+    @include flex-space-between(row);
+    align-items: center;
+
+    &-header {
+        font-weight: $medium;
+        font-size: 18px;
+    }
+
+    &-p {
+        color: #666666;
+        font-size: 12px;
+
+        &-link {
+            color: $text-secondary-color;
+            font-weight: $medium;
+        }
+    }
+
+    button {
+        @include button-hollow;
+        width: 126px;
+        height: 32px;
+    }
+}
+
+.search {
+    padding: 20px 16px;
+    border-bottom: 1px solid $divider-color;
+
+    &-bar {
+        @include flex-space-between(row);
+        align-items: center;
+        border: 1px solid #666666;
+        padding: 12px 16px;
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            color: #666666;
+        }
+    }
+}
+
+
+.my-app-header,.utilities-header {
+    padding: 20px 16px;
+    color: $text-secondary-color;
+    font-size: 20px;
+    font-weight: $medium;
+    border-bottom: 1px solid $secondary-color;
+}
+
+.my-app-settings-wrapper {
+    padding: 16px;
+    @include flex-space-between(row);
+    align-items: center;
+    border-bottom: 1px solid $divider-color;
+
+    .settings {
+        @include flex-direction(row, 8px);
+        align-items: center;
+
+        &-fig {
+            width: 24px;
+            height: 24px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &-text {
+            font-weight: $normal;
+
+            &-container {
+                a {
+                    font-size: 14px;
+                    color: $text-secondary-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+
+.text-right-wrapper{
+    @include flex-direction(row,16px);
+    align-items: center;
+
+    p{
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+    }
+}
+
+.navigation-bottom {
+    @include flex-space-between(row);
+    padding: 10px 30px;
+    position: sticky;
+    top: 100%;
+    background-color: white;
+    z-index: 100;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+
+    &-item {
+        @include flex-direction(column, 3px);
+        align-items: center;
+
+        &-image {
+            font-size: 10px;
+        }
+    }
+
+    &-link {
+        color: black;
+        text-decoration: none;
+    }
+
+    &-item-text {
+        font-size: 10px;
+    }
+}
+
+.hidden-nav-bottom {
+    transform: translateY(100%);
+}

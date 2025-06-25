@@ -72,29 +72,9 @@
         width: 50px;
         height: 4px;
         top: 32px;
-        left: -5px;
+        left: 0px;
         background-color: $text-secondary-color;
     }
-}
-
-.following-banner {
-    @include flex-space-between(row);
-    padding: 16px;
-    background-color: $secondary-backgorund;
-    align-items: center;
-
-    p {
-        font-size: 14px;
-        color: $text-secondary-color;
-        font-weight: 500;
-    }
-
-    .following-banner-btn {
-        @include button-hollow;
-        width: 60px;
-        height: 32px;
-    }
-
 }
 
 .news-container {
@@ -176,7 +156,7 @@
             font-weight: $medium;
             font-family: $font-family-nepali;
             font-size: 18px;
-            line-height: 24px;
+            line-height: 18px;
 
         }
 
@@ -332,7 +312,7 @@
     @include flex-space-between(row);
     padding: 10px 30px;
     position: sticky;
-    bottom: 0%;
+    bottom: 0px;
     background-color: white;
     z-index: 100;
     transform: translateY(0);

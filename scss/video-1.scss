@@ -17,7 +17,7 @@
 .video-image {
     width: 100%;
 
-    img {
+    img,video {
         width: 100%;
         object-fit: cover;
     }
@@ -25,25 +25,26 @@
 
 .header-container {
     @include flex-direction(column, 16px);
-    background-color: $secondary-backgorund;
+    background-color: #E0E9F3;
     padding: 16px;
     font-family: $font-family-nepali;
 
     .header-category {
         color: $text-secondary-color;
-        font-size: 22px;
+        font-size: 14px;
         font-weight: 500;
 
     }
 
     .header-header {
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 30px;
         font-weight: $medium;
+        font-family: $font-family-nepali;
     }
 
     .author {
-        font-size: 20px;
+        font-size: 14px;
         color: #666666;
 
         &-time {
@@ -91,8 +92,8 @@
 
     &-p-container {
         p {
-            line-height: 28px;
-            font-size: 20px;
+            line-height: 24px;
+            font-size: 16px;
             font-family: $font-family-nepali;
             color: #606060;
             font-weight: 500;
@@ -114,7 +115,16 @@
     padding:16px;
     margin-bottom: 16px;
     @include flex-space-between(row);
+    position: relative;
     align-items: center;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 80px;
+        width: 95%;
+        height: 1px;
+        background-color: $secondary-color;
+    }
     .comments{
         color: $secondary-color;
         &-number{
@@ -159,4 +169,54 @@
 
 .hidden-nav-bottom {
     transform: translateY(100%);
+}
+.thap-video-header{
+    padding: 16px 16px 0px 16px;
+    font-family: $font-family-nepali;
+    font-size: 24px;
+    font-weight: $medium;
+    color: $text-secondary-color;
+}
+.thap-video-wrapper{
+    @include flex-direction(row,14px);
+    padding: 16px 20px;
+    .thap-video-image{
+        width: 159px;
+        height: 90px;
+        flex-shrink: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $text-light;
+    }
+    .thap-video-content-header{
+        font-family: $font-family-nepali;
+        font-weight: $medium;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .thap-video-bottom{
+        @include flex-direction(row,4px);
+        p{
+            font-family: $font-family-nepali;
+            font-size: 12px;
+            color: #888888;
+        }
+        .video-button{
+            width: 12px;
+            height: 12px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
 }

@@ -127,88 +127,143 @@ body {
   height: 100vh;
 }
 
-.latest-header {
+.video-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 29px 16px 16px 16px;
+  gap: 20px;
+  padding: 27px 0px 21px 16px;
+  align-items: center;
+  border-bottom: 1px solid #DDDDDD;
 }
-.latest-header-header {
+.video-header-header {
+  color: #326CAC;
+  font-family: "Mukta";
   font-size: 24px;
   font-weight: 600;
 }
 
-.latest-date-container-top {
+.video-image {
+  width: 100%;
+}
+.video-image img, .video-image video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #E0E9F3;
+  padding: 16px;
+  font-family: "Mukta";
+}
+.header-container .header-category {
+  color: #326CAC;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-container .header-header {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: "Mukta";
+}
+.header-container .author {
+  font-size: 14px;
+  color: #666666;
+}
+.header-container .author-time {
+  color: #888888;
+}
+
+.news-content {
+  padding: 16px;
+}
+.news-content-ads {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.news-content-ad {
+  flex: 1;
+}
+.news-content-ad img {
+  width: 100%;
+  object-fit: contain;
+}
+.news-content-ad-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.news-content-ad-1 img {
+  width: 100%;
+  object-fit: contain;
+}
+.news-content-p-container p {
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "Mukta";
+  color: #606060;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.news-content-image {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.news-content-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.comment-container-1 {
+  background-color: rgba(50, 108, 172, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 16px;
-  background-color: #326CAC;
+  position: relative;
   align-items: center;
 }
-.latest-date-container-top .latest-date {
-  font-family: "Mukta";
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
+.comment-container-1::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  width: 95%;
+  height: 1px;
+  background-color: #204A8E;
 }
-.latest-date-container-top .latest-date-day {
+.comment-container-1 .comments {
+  color: #204A8E;
+}
+.comment-container-1 .comments-number {
   font-weight: 600;
-  color: #ffffff;
 }
-.latest-date-container-top .latest-date-date {
-  color: #ffffff;
-  font-weight: normal;
-}
-.latest-date-container-top .latest-date-btn {
-  width: 73px;
+.comment-container-1 .comment-btn {
+  width: 91px;
   height: 32px;
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-}
-
-.latest {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  padding: 16px 16px;
-  border-bottom: 1px solid #DDDDDD;
-}
-.latest-time {
-  flex-shrink: 0;
-  padding-right: 16px;
-}
-.latest-time p {
   font-size: 14px;
-  font-weight: 600;
-}
-.latest-title h2 {
-  font-size: 16px;
-  line-height: 22px;
-  font-family: "Mukta";
-}
-.latest-image {
-  width: 78px;
-  height: 58px;
-  flex-shrink: 0;
-}
-.latest-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.unred {
-  background-color: #F5F8FB;
+  background-color: rgba(50, 108, 172, 0.1);
+  color: #204A8E;
+  border: 1px solid #204A8E;
+  cursor: pointer;
 }
 
 .navigation-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 18px 44px;
   position: sticky;
   bottom: 0px;
   background-color: white;
@@ -218,9 +273,10 @@ body {
 }
 .navigation-bottom-item {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
+  flex-direction: row;
+  gap: 6px;
   align-items: center;
+  justify-content: center;
 }
 .navigation-bottom-item-image {
   font-size: 10px;
@@ -237,58 +293,60 @@ body {
   transform: translateY(100%);
 }
 
-.latest-ads {
-  margin: 12px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-  align-items: center;
-}
-
-.latest-ad {
-  width: 100%;
-}
-.latest-ad img {
-  width: 100%;
-  object-fit: contain;
-}
-
-.latest-ad-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.latest-ad-1 img {
-  width: 100%;
-  object-fit: contain;
-}
-
-.latest-date-container {
-  background-color: #326CAC;
-  padding: 16px;
-}
-.latest-date-container .latest-date {
+.thap-video-header {
+  padding: 16px 16px 0px 16px;
   font-family: "Mukta";
+  font-size: 24px;
+  font-weight: 600;
+  color: #326CAC;
+}
+
+.thap-video-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 14px;
+  padding: 16px 20px;
 }
-.latest-date-container .latest-date-day {
+.thap-video-wrapper .thap-video-image {
+  width: 159px;
+  height: 90px;
+  flex-shrink: 0;
+}
+.thap-video-wrapper .thap-video-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.thap-video-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+.thap-video-wrapper .thap-video-content-header {
+  font-family: "Mukta";
   font-weight: 600;
-  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
 }
-.latest-date-container .latest-date-date {
-  color: #ffffff;
-  font-weight: normal;
+.thap-video-wrapper .thap-video-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
-.latest-date-container .latest-date-btn {
-  width: 73px;
-  height: 32px;
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-}/*# sourceMappingURL=latest.css.map */
+.thap-video-wrapper .thap-video-bottom p {
+  font-family: "Mukta";
+  font-size: 12px;
+  color: #888888;
+}
+.thap-video-wrapper .thap-video-bottom .video-button {
+  width: 12px;
+  height: 12px;
+}
+.thap-video-wrapper .thap-video-bottom .video-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*# sourceMappingURL=video-1.css.map */
