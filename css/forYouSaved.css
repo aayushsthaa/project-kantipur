@@ -472,4 +472,8 @@ body {
 
 .hidden-nav-bottom {
   transform: translateY(100%);
+}
+
+.active-bottom {
+  color: #326CAC;
 }/*# sourceMappingURL=forYouSaved.css.map */

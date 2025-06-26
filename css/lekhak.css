@@ -193,6 +193,10 @@ body {
   gap: 16px;
   align-items: center;
 }
+.secondary-article-profile-container a {
+  color: black;
+  text-decoration: none;
+}
 .secondary-article-profile-container-name {
   font-family: "Mukta";
   font-size: 18px;

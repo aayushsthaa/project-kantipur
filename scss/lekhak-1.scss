@@ -1,0 +1,165 @@
+@use './config' as *;
+
+
+.lekhak-header {
+    @include flex-space-between(row);
+    padding: 27px 16px 21px 16px;
+    border-bottom: 1px solid $divider-color;
+    align-items: center;
+}
+
+.lekhak-header-left {
+    @include flex-direction(row, 20px);
+    align-items: center;
+
+    &-header {
+        @include news-header;
+        color: $text-secondary-color;
+    }
+}
+
+.profile-pictures {
+    position: relative;
+
+    .background-img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 3.26/1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .profile-img {
+        position: absolute;
+        top: 70%;
+        left: 16px;
+        width: 22%;
+        aspect-ratio: 1/1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
+
+}
+
+.follow-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+
+    .follow-button {
+        width: 117px;
+        height: 32px;
+        font-weight: 500;
+        background-color: $divider-color;
+        border: none;
+    }
+}
+
+.profile-name-container {
+    @include flex-direction(column, 12px);
+    padding: 16px;
+
+    .profile-name {
+        @include news-header;
+    }
+
+    .profile-p {
+        @include news-paragraph;
+        font-weight: 200;
+    }
+}
+
+
+.lekhak-banner {
+    @include flex-space-between(row);
+    padding: 16px;
+    background-color: $secondary-backgorund;
+    align-items: center;
+
+    p {
+        color: $text-secondary-color;
+        font-weight: $medium;
+    }
+
+    select {
+        width: 87px;
+        height: 32px;
+        @include button-hollow;
+        padding-left: 4px;
+    }
+}
+
+
+.news-wrapper {
+    padding: 16px;
+    @include flex-direction(column, 12px);
+}
+
+.news-content-wrapper {
+    @include flex-direction(row, 16px);
+    justify-content: space-between;
+    border-bottom: 9px;
+
+    a {
+        color: $text-light;
+        text-decoration: none;
+    }
+
+    .news-content {
+        @include flex-direction(column, 8px);
+
+        &-header {
+            font-weight: $medium;
+            font-family: $font-family-nepali;
+            font-size: 18px;
+            line-height: 24px;
+
+        }
+
+        &-p {
+            font-family: $font-family-nepali;
+            font-size: 14px;
+
+        }
+
+        &-image {
+            flex-shrink: 0;
+            width: 117px;
+            aspect-ratio: 39/29;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+
+.kantipur-share {
+    @include flex-space-between(row);
+    padding-right: 13px;
+
+    &-p {
+        font-family: $font-family-nepali;
+        color: $toggle-light;
+        font-size: 14px;
+    }
+
+    &-buttons {
+        @include flex-direction(row, 30px);
+    }
+}
