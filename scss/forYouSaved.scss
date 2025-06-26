@@ -142,6 +142,7 @@
 
 .news-content-wrapper {
     @include flex-direction(row, 16px);
+    justify-content: space-between;
     border-bottom: 9px;
 
     a {

@@ -80,7 +80,7 @@ body.dark-mode .sub-category-item-link {
 body.dark-mode .navigation-bottom-link {
   color: black;
 }
-body.dark-mode .button-hollow {
+body.dark-mode .button-hollow, body.dark-mode .menu-top-banner-btn {
   background-color: #F5F8FB !important;
 }
 body.dark-mode .dark-mode-container {
@@ -106,11 +106,14 @@ body.dark-mode .notification-date,
 body.dark-mode .bichar-date,
 body.dark-mode .create-account-container,
 body.dark-mode .header-container,
-body.dark-mode .comment-container-1, body.dark-mode .comment-bottom, body.dark-mode .comment-top-container {
+body.dark-mode .comment-container-1, body.dark-mode .comment-bottom, body.dark-mode .comment-top-container, body.dark-mode .menu-top-banner-wrapper, body.dark-mode .following-banner, body.dark-mode .news-container-banner-bottom {
   background-color: #204A8E !important;
 }
 body.dark-mode .or p {
   background-color: #181818 !important;
+}
+body.dark-mode .dark-mode-container, body.dark-mode .menu {
+  background-color: black;
 }
 
 * {
@@ -198,6 +201,7 @@ body {
   color: #204A8E;
   border: 1px solid #204A8E;
   cursor: pointer;
+  font-weight: 600;
   width: 126px;
   height: 32px;
 }

@@ -1,7 +1,7 @@
 let prevScrollPos = window.pageYOffset;
 let navBottom = document.querySelector(".navigation-bottom");
 let menu = document.querySelector(".menu-hamburger");
-let menuItems = document.querySelector('.menu-container');
+let menuContainer = document.querySelector('.menu-container');
 let allContainer = document.querySelector('.all-container');
 let maincontent = document.querySelector('.main-content');
 
@@ -23,13 +23,16 @@ function scrollEvent() {
 
 function menuFunction() {
     if (menu.classList.contains('hamburger-active')) {
+        menuContainer.classList.add('menu-animation-out');
         menu.classList.remove('hamburger-active');
         menu.classList.add('menu-hamburger');
-        menuItems.classList.add('hidden-menu');
-        allContainer.classList.remove('hidden-menu');
+        menuContainer.classList.remove('menu-animation-in');
+        allContainer.classList.remove('none');
+
     } else {
-        menuItems.classList.remove('hidden-menu');
-        allContainer.classList.add('hidden-menu');
+        menuContainer.classList.remove('menu-animation-out');
+        menuContainer.classList.add('menu-animation-in');
+        allContainer.classList.add('none');
         menu.classList.add("hamburger-active");
         menu.classList.remove('menu-hamburger');
 

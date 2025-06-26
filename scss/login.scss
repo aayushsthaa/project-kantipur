@@ -68,6 +68,11 @@
     &>p{
         font-weight: $medium;
     }
+    a{
+        text-decoration: none;
+        color: $text-light;
+    
+    }
     &-btn {
         @include flex-direction(row, 12px);
         padding: 12px;

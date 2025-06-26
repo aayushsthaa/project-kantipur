@@ -24,6 +24,7 @@ $font-size: 14px;
   color: $secondary-color;
   border: 1px solid $secondary-color;
   cursor: pointer;
+  font-weight: 600;
 }
 
 @mixin flex-space-between($direction) {
@@ -51,28 +52,30 @@ $font-size: 14px;
   font-family: $font-family-nepali;
   font-size: 22px;
   font-weight: $medium;
-  line-height: 22px;
+  line-height: 30px;
 }
 
 @mixin news-paragraph {
   font-family: $font-family-nepali;
   font-size: 16px;
   font-weight: $normal;
-  line-height: 18px;
+  line-height: 24px;
+  color: #2A2A2A;
 }
 
 @mixin secondary-header {
   font-family: $font-family-nepali;
   font-size: 18px;
   font-weight: $medium;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 @mixin secondary-paragaraph {
   font-family: $font-family-nepali;
   font-size: 14px;
   font-weight: $normal;
-  line-height: 24px;
+  line-height: 20px;
+  color: #2A2A2A;;
 }
 
 @mixin hero-content {
@@ -95,6 +98,18 @@ $font-size: 14px;
 
     &-time {
       @include flex-direction(row, 12px);
+      p{
+        font-family: $font-family-nepali;
+      }
+
+    }
+    &-category{
+      font-weight: 600;
+      color: #326CAC;
+      font-size: 14px;
+      &-time{
+        color: #888888;
+      }
     }
 
     &-header {
@@ -204,7 +219,7 @@ body.dark-mode {
     color: $text-light;
   }
 
-  .button-hollow {
+  .button-hollow,.menu-top-banner-btn {
     background-color: $secondary-backgorund !important;
   }
 
@@ -236,7 +251,7 @@ body.dark-mode {
   .bichar-date,
   .create-account-container,
   .header-container,
-  .comment-container-1,.comment-bottom,.comment-top-container {
+  .comment-container-1,.comment-bottom,.comment-top-container,.menu-top-banner-wrapper,.following-banner,.news-container-banner-bottom {
     background-color: $secondary-color !important;
   }
 
@@ -244,6 +259,9 @@ body.dark-mode {
     p {
       background-color: $background-dark !important;
     }
+  }
+  .dark-mode-container,.menu{
+    background-color: black;
   }
 }
 

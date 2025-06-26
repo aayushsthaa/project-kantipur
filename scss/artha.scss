@@ -1,6 +1,6 @@
 @use './config' as *;
 
-.video-header {
+.artha-header {
     @include flex-direction(row, 20px);
     padding: 27px 0px 21px 16px;
     align-items: center;
@@ -14,7 +14,7 @@
     }
 }
 
-.video-image {
+.artha-image {
     width: 100%;
 
     img {

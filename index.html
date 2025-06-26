@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <div class="menu-overlay"></div>
     <header class="kantipur-header">
         <span class="menu-hamburger"></span>
         <figure class="main-logo">
@@ -41,7 +42,7 @@
             </figure>
         </a>
     </header>
-    <div class="menu-container hidden-menu">
+    <div class="menu-container menu-animation-out">
         <div class="create-account-container">
             <div class="create-account-text">
                 <h2>Create an account</h2>
@@ -244,7 +245,8 @@
                 <p class="news-radar-bottom-p">
                     Check what’s happening near you.
                 </p>
-                <a href="./pages/news-radar.html"><button class="news-radar-bottom-button button-hollow">See Now</button></a>
+                <a href="./pages/news-radar.html"><button class="news-radar-bottom-button button-hollow">See
+                        Now</button></a>
             </div>
             <hr class="line">
         </section>
@@ -285,8 +287,8 @@
                 </figure>
                 <div class="samachar-hero-content">
                     <div class="samachar-hero-content-time">
-                        <p style="color:#204A8E; font-size: 14px;">समाचार</p>
-                        <p style="font-size: 14px;">१ घण्टा अघि </p>
+                        <p class="samachar-hero-content-category">समाचार</p>
+                        <p class="samachar-hero-content-category-time">१ घण्टा अघि </p>
                     </div>
                     <h2 class="samachar-hero-content-header">लिखित सहमतिनजिक कांग्रेस-माओवादी</h2>
                     <p class="samachar-hero-content-p">पुस २६ यता विकास भएको सम्बन्धलाई औपचारिकता दिने समझदारी,
@@ -749,45 +751,39 @@
         <section class="top-video">
             <div class="top-video-header">
                 <h2 class="top-video-header-text">टप भिडियो</h2>
-                <a href="" class="top-video-header-link"><span class="link-text">See all</span><span class="link-arrow">
+                <a href="./pages/videos.html" class="top-video-header-link"><span class="link-text">See all</span><span
+                        class="link-arrow">
                         &rarr;</span></a>
             </div>
-            <div class="swiper mySwiper-2">
-                <div class="swiper-wrapper">
+            <div class="swiper-container">
+                <div class="swiper-slide">
+                    <figure class="swiper-slide-image">
+                        <img src="./images/38.png" alt="">
+                    </figure>
+                    <a href="">
+                        <h2 class="swiper-slide-header">पूर्वप्रधानमन्त्रीहरूलाई राष्ट्रपति बनाउनु हुन्न : महामन्त्री
+                            शर्मा</h2>
+                    </a>
 
-                    <div class="swiper-slide slide2">
-                        <div class="swiper-wrapper-inside">
-                            <figure class="swiper-slide-image">
-                                <img src="./images/1.png" alt="">
-                            </figure>
-                            <h2 class="swiper-text">
-                                कहाँबाट सल्कियो यो मास हिस्टेरिया ?
-                            </h2>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-wrapper-inside slide2">
-                            <figure class="swiper-slide-image">
-                                <img src="./images/1.png" alt="">
-                            </figure>
-                            <h2 class="swiper-text">
-                                कहाँबाट सल्कियो यो मास हिस्टेरिया ?
-                            </h2>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-wrapper-inside slide2">
-                            <figure class="swiper-slide-image">
-                                <img src="./images/1.png" alt="">
-                            </figure>
-                            <h2 class="swiper-text">
-                                कहाँबाट सल्कियो यो मास हिस्टेरिया ?
-                            </h2>
-                        </div>
-
-                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="swiper-slide-image">
+                        <img src="./images/39.png" alt="">
+                    </figure>
+                    <a href="">
+                        <h2 class="swiper-slide-header">'को छ यतिबेला श्री ५ महाराजधिराज ? सरकारले संसद्लाई जवाफ ...
+                        </h2>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="./pages/video-1.html">                    <figure class="swiper-slide-image">
+                        <img src="./images/35.png" alt="">
+                    </figure></a>
+                    <a href="./pages/video-1.html">
+                        <h2 class="swiper-slide-header">उपराष्ट्रपति चुनावमा महिला सांसदले संविधानको अधिकार लिन सकेनन् :
+                            राउत
+                        </h2>
+                    </a>
                 </div>
             </div>
         </section>
@@ -855,7 +851,7 @@
                         </svg>
 
                     </figure>
-                    <div class="navigation-bottom-item-text">
+                    <div class="navigation-bottom-item-text active-bottom">
                         Home
                     </div>
                 </div>

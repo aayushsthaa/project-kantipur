@@ -162,6 +162,7 @@
 
 .news-content-wrapper {
     @include flex-direction(row, 16px);
+    justify-content: space-between;
     border-bottom: 9px;
 
     a {
@@ -219,6 +220,7 @@
     padding: 16px;
     margin-bottom: 16px;
     @include flex-space-between(row);
+    align-items: center;
     background-color: $secondary-backgorund;
 
     p {
