@@ -800,6 +800,9 @@ i {
   object-fit: cover;
   object-position: center;
 }
+.swiper-container .swiper-slide a {
+  text-decoration: none;
+}
 .swiper-container .swiper-slide-header {
   color: white;
   font-size: 18px;
